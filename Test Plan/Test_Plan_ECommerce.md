@@ -110,7 +110,7 @@ Mục đích của bài kiểm thử là:
 
 ### 5.2 Điều Kiện Ra (Exit Criteria)
 
-- ✅ Tất cả 45 test case đã được thực thi
+- ✅ Tất cả 50 test case đã được thực thi
 - ✅ Yêu cầu (Requirements) có độ bao phủ ≥ 90%
 - ✅ Tất cả bug Critical đã được ghi nhận
 - ✅ Test report hoàn thành
@@ -147,10 +147,10 @@ Mục đích của bài kiểm thử là:
 | Giai Đoạn | Công Việc | Thời Gian (Ngày) |
 |-----------|----------|-----------------|
 | **Chuẩn bị** | Thiết kế test case, RTM | 3 |
-| **Thực thi** | Chạy 45 test case, ghi bug | 4 |
+| **Thực thi** | Chạy 50 test case, ghi bug | 5 |
 | **Phân tích** | Phân tích kết quả, viết báo cáo | 2 |
 | **Báo cáo** | Hoàn thành test report, metrics | 1 |
-| **Tổng** | | **10 ngày** |
+| **Tổng** | | **11 ngày** |
 
 ---
 

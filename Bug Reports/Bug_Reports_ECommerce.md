@@ -18,7 +18,7 @@
 | **Kết quả thực tế** | Tài khoản được tạo thành công |
 | **Severity** | **Major** |
 | **Priority** | **High** |
-| **Trạng thái** | New |
+| **Trạng thái** | Mới |
 | **Môi trường** | Windows 10, Chrome 120 |
 | **Test Case Liên Quan** | TC_AUTH_002 |
 | **Hình ảnh/Log** | Screenshot: email_validation_failed.png |
@@ -37,7 +37,7 @@
 | **Kết quả thực tế** | Đăng ký thành công |
 | **Severity** | **Critical** |
 | **Priority** | **High** |
-| **Trạng thái** | New |
+| **Trạng thái** | Mới |
 | **Môi trường** | Windows 10, Chrome 120 |
 | **Test Case Liên Quan** | TC_AUTH_004 |
 | **Ghi chú** | Đây là vấn đề bảo mật |
@@ -56,7 +56,7 @@
 | **Kết quả thực tế** | Tổng tiền = 250,000đ |
 | **Severity** | **Critical** |
 | **Priority** | **High** |
-| **Trạng thái** | New |
+| **Trạng thái** | Mới |
 | **Môi trường** | Windows 10, Chrome 120 |
 | **Test Case Liên Quan** | TC_CHECKOUT_007 |
 | **Ảnh chụp** | cart_calculation_wrong.png |
@@ -75,7 +75,7 @@
 | **Kết quả thực tế** | Số lượng được cập nhật thành 10 |
 | **Severity** | **Major** |
 | **Priority** | **High** |
-| **Trạng thái** | New |
+| **Trạng thái** | Mới |
 | **Môi trường** | Windows 10, Chrome 120 |
 | **Test Case Liên Quan** | TC_CART_004 |
 
@@ -93,7 +93,7 @@
 | **Kết quả thực tế** | Không có kết quả hoặc kết quả không đầy đủ |
 | **Severity** | **Minor** |
 | **Priority** | **Medium** |
-| **Trạng thái** | New |
+| **Trạng thái** | Mới |
 | **Môi trường** | Windows 10, Chrome 120 |
 | **Test Case Liên Quan** | TC_PRODUCT_001 |
 
@@ -111,7 +111,7 @@
 | **Kết quả thực tế** | Đặt hàng thành công |
 | **Severity** | **Major** |
 | **Priority** | **High** |
-| **Trạng thái** | New |
+| **Trạng thái** | Mới |
 | **Môi trường** | Windows 10, Chrome 120 |
 | **Test Case Liên Quan** | TC_CHECKOUT_003 |
 
@@ -129,7 +129,7 @@
 | **Kết quả thực tế** | Cả 3 đơn hàng đều được giảm giá |
 | **Severity** | **Critical** |
 | **Priority** | **High** |
-| **Trạng thái** | New |
+| **Trạng thái** | Mới |
 | **Môi trường** | Windows 10, Chrome 120 |
 | **Test Case Liên Quan** | TC_CHECKOUT_008 |
 | **Ảnh chụp** | coupon_reused_multiple_times.png |
@@ -148,7 +148,7 @@
 | **Kết quả thực tế** | Không nhận được email |
 | **Severity** | **Major** |
 | **Priority** | **High** |
-| **Trạng thái** | New |
+| **Trạng thái** | Mới |
 | **Môi trường** | Windows 10, Chrome 120 |
 | **Test Case Liên Quan** | TC_AUTH_001 |
 
@@ -166,7 +166,7 @@
 | **Kết quả thực tế** | Chỉ hiển thị icon "broken image" |
 | **Severity** | **Major** |
 | **Priority** | **Medium** |
-| **Trạng thái** | New |
+| **Trạng thái** | Mới |
 | **Môi trường** | Windows 10, Chrome 120 |
 | **Test Case Liên Quan** | TC_PRODUCT_007 |
 
@@ -184,7 +184,7 @@
 | **Kết quả thực tế** | Email hiển thị tổng = 200,000đ |
 | **Severity** | **Minor** |
 | **Priority** | **Medium** |
-| **Trạng thái** | New |
+| **Trạng thái** | Mới |
 | **Môi trường** | Windows 10, Chrome 120 |
 | **Test Case Liên Quan** | TC_CHECKOUT_015 |
 
@@ -202,7 +202,7 @@
 | **Kết quả thực tế** | Filter vẫn giữ 500K-2M |
 | **Severity** | **Minor** |
 | **Priority** | **Low** |
-| **Trạng thái** | New |
+| **Trạng thái** | Mới |
 | **Môi trường** | Windows 10, Chrome 120 |
 | **Test Case Liên Quan** | TC_PRODUCT_005, TC_PRODUCT_004 |
 
@@ -220,7 +220,7 @@
 | **Kết quả thực tế** | Nút vẫn hoạt động, bấm vào báo lỗi |
 | **Severity** | **Major** |
 | **Priority** | **High** |
-| **Trạng thái** | New |
+| **Trạng thái** | Mới |
 | **Môi trường** | Windows 10, Chrome 120 |
 | **Test Case Liên Quan** | TC_CART_008 |
 
