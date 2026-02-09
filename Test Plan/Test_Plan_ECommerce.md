@@ -103,20 +103,18 @@ Mục đích của bài kiểm thử là:
 
 ### 5.1 Điều Kiện Vào (Entry Criteria)
 
-- ✅ Hệ thống được triển khai đầy đủ
-- ✅ Dữ liệu test được chuẩn bị sẵn
-- ✅ Kế hoạch kiểm thử được phê duyệt
-- ✅ Nhân viên kiểm thử đã được huấn luyện
-- ✅ Môi trường kiểm thử sẵn sàng
+-  Hệ thống được triển khai đầy đủ
+-  Dữ liệu test được chuẩn bị sẵn
+-  Kế hoạch kiểm thử được phê duyệt
+-  Môi trường kiểm thử sẵn sàng
 
 ### 5.2 Điều Kiện Ra (Exit Criteria)
 
-- ✅ Tất cả 50 test case đã được thực thi
-- ✅ Yêu cầu (Requirements) có độ bao phủ ≥ 90%
-- ✅ Tất cả bug Critical đã được ghi nhận
-- ✅ Test report hoàn thành
-- ✅ Quyết định release/no-release được đưa ra
-- ✅ Các biên bản kiểm thử được lưu trữ
+-  Tất cả test case đã được thực thi
+-  Yêu cầu (Requirements) có độ bao phủ ≥ 90%
+-  Tất cả bug Critical đã được ghi nhận
+-  Test report hoàn thành
+-  Các biên bản kiểm thử được lưu trữ
 
 ---
 
@@ -148,7 +146,7 @@ Mục đích của bài kiểm thử là:
 | Giai Đoạn | Công Việc | Thời Gian (Ngày) |
 |-----------|----------|-----------------|
 | **Chuẩn bị** | Thiết kế test case, RTM | 3 |
-| **Thực thi** | Chạy 50 test case, ghi bug | 5 |
+| **Thực thi** | Chạy test case, ghi bug | 5 |
 | **Phân tích** | Phân tích kết quả, viết báo cáo | 2 |
 | **Báo cáo** | Hoàn thành test report, metrics | 1 |
 | **Tổng** | | **11 ngày** |
@@ -159,26 +157,17 @@ Mục đích của bài kiểm thử là:
 
 Hệ thống được coi là **SẴN SÀNG RELEASE** khi:
 
-✅ Test execution rate = 100%  
-✅ Pass rate ≥ 85%  
-✅ Không có bug Critical còn mở  
-✅ RTM coverage ≥ 90%  
-✅ Severity & Priority được xác nhận  
+- Test execution rate = 100%  
+- Pass rate ≥ 85%  
+- Không có bug Critical còn mở  
+- RTM coverage ≥ 90%  
+- Severity & Priority được xác nhận  
 
 Hệ thống được coi là **KHÔNG SẴN SÀNG RELEASE** khi:
 
-❌ Còn bug Critical  
-❌ Pass rate < 85%  
-❌ RTM coverage < 90%  
-
----
-
-## 10. PHÊ DUYỆT (Sign-off)
-
-| Vai Trò | Tên | Ký | Ngày |
-|---------|-----|-----|------|
-| **Test Lead** | Nhóm Testing | - | 28/01/2026 |
-| **Project Manager** | - | - | - |
+- Còn bug Critical  
+- Pass rate < 85%  
+- RTM coverage < 90%  
 
 ---
 
