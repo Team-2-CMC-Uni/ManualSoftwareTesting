@@ -66,7 +66,8 @@ Mục đích của bài kiểm thử là:
 - **Equivalence Partitioning:** Phân chia dữ liệu vào các lớp tương đương
 - **Boundary Value Analysis:** Kiểm thử giá trị biên
 - **Decision Table Testing:** Kiểm thử các kết hợp điều kiện
-- **Error Guessing:** Dự đoán các lỗi tiềm ẩn
+- **BlackBox Testing:** Kiểm thử kết quả
+- **WhiteBox Testing:** Kiểm thử chi tiết dòng lệnh
 
 ---
 
