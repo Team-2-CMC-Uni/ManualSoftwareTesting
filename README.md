@@ -1,14 +1,12 @@
 # Kiểm Thử Website Swag Labs (Saucedemo.com)
 
 Dự án này chứa bộ tài liệu và kế hoạch kiểm thử thủ công được **điều chỉnh để áp dụng cho website Swag Labs** (`https://www.saucedemo.com/`).  
-Một số phần vẫn giữ lại ví dụ e-commerce tổng quát để bạn tham khảo cách thiết kế tài liệu;  
-những nội dung cần bạn tự thực hành trực tiếp trên Swag Labs được đánh dấu bằng **`[Thực tế]`**.
 
 ---
 
 ## 📋 Giới Thiệu
 
-Tài liệu này dùng để **luyện tập kiểm thử thủ công trên website Swag Labs**.  
+Tài liệu này dùng để **kiểm thử thủ công trên website Swag Labs**.  
 Quá trình kiểm thử tập trung vào các chức năng thực tế đang có trên trang:
 - **Đăng nhập/Đăng xuất (Authentication)**: Đăng nhập với các tài khoản demo, xử lý lỗi đăng nhập
 - **Danh sách & Chi tiết sản phẩm (Inventory)**: Xem danh sách sản phẩm, sort, xem chi tiết
@@ -142,4 +140,4 @@ Chỉ Số Kiểm Thử & Báo Cáo Kiểm Thử
 
 ---
 
-**Cập Nhật Lần Cuối:** 29/01/2026
+**Cập Nhật Lần Cuối:** 24/02/2026
