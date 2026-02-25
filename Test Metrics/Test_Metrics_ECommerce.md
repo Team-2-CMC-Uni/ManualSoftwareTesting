@@ -1,72 +1,72 @@
-# CHỈ SỐ KIỂM THỬ (TEST METRICS)
+# CHỈ SỐ KIỂM THỬ
 ## Website Swag Labs (Saucedemo.com) – Công Thức & Mẫu Số Liệu
 
-**Ngày lập báo cáo (Swag Labs) [Thực tế]:** …  
-**Giai đoạn:** Manual QA – Swag Labs
+**Ngày lập báo cáo (Swag Labs):** 25/02/2026  
+**Giai đoạn:** Kiểm thử thủ công – Swag
 
 ---
 
-## 1. CHỈ SỐ CHÍNH (Key Metrics) [Thực tế]
+## 1. CHỈ SỐ CHÍNH 
 
-### 1.1 Tỷ lệ thực thi test (Test Execution Rate) [Thực tế]
+### 1.1 Tỷ lệ thực thi kiểm thử
 
-**Công thức:** Execution Rate = (Test Executed / Total Test Cases) × 100%
+**Công thức:** Tỷ lệ thực thi = (Số ca đã thực thi / Tổng số ca kiểm thử) × 100%
 
-| Metric | Giá trị |
+| Chỉ số | Giá trị |
 |--------|--------|
-| **Tổng số test case** | **21** *(theo `Test_Cases_ECommerce.md`)* |
-| **Đã thực thi (Executed)** | … **[Thực tế]** |
-| **Chưa thực thi (Not Executed)** | … **[Thực tế]** |
-| **Tỷ lệ thực thi (Execution Rate)** | … **[Thực tế]** |
+| **Tổng số ca kiểm thử** | **21** *(theo `Test_Cases_ECommerce.md`)* |
+| **Đã thực thi** | **21** |
+| **Chưa thực thi** | **0** |
+| **Tỷ lệ thực thi** | **100%** |
 
 **Biểu đồ minh họa:**
 ```
-Executed:      ██████████████████████████ …% (…)
-Not Executed:  ░░░░░░░░░░░░░░░░░░░░░░░░░ …% (…)
+Đã thực thi:      ██████████████████████████ 100% (21)
+Chưa thực thi:    ░░░░░░░░░░░░░░░░░░░░░░░░░ 0% (0)
 ```
 
-**Gợi ý phân tích:** Điền số liệu thực tế; lý tưởng là **100% test case được thực thi**, không có test bị bỏ qua.
+**Nhận xét:** 100% ca kiểm thử đã được thực thi, không có ca nào bị bỏ qua.
 
 ---
 
-### 1.2 Tỷ lệ pass test (Test Pass Rate) [Thực tế]
+### 1.2 Tỷ lệ đạt kiểm thử
 
-**Công thức:** Pass Rate = (Test Passed / Test Executed) × 100%
+**Công thức:** Tỷ lệ đạt = (Số ca đạt / Số ca đã thực thi) × 100%
 
-| Metric | Giá trị |
+| Chỉ số | Giá trị |
 |--------|--------|
-| **Test Passed** | … **[Thực tế]** |
-| **Test Failed** | … **[Thực tế]** |
-| **Test Blocked** | … **[Thực tế]** |
-| **Tổng đã thực thi (Total Executed)** | … **[Thực tế]** |
-| **Tỷ lệ Pass (Pass Rate)** | … **[Thực tế]** |
-| **Tỷ lệ Fail (Fail Rate)** | … **[Thực tế]** |
+| **Ca đạt** | **16** |
+| **Ca không đạt** | **4** |
+| **Ca bị chặn** | **0** |
+| **Tổng đã thực thi** | **21** |
+| **Tỷ lệ đạt** | **76%** |
+| **Tỷ lệ không đạt** | **24%** |
 
 **Biểu đồ minh họa:**
 ```
-Pass (…):   ██████████████████████ …%
-Fail (…):   ███████ …%
-Blocked (0): ░░░░░░░░░░░░░░░░░░░░░░░░░ 0%
+Đạt (16):        ██████████████████████ 76%
+Không đạt (4):   ███████ 24%
+Bị chặn (0):     ░░░░░░░░░░░░░░░░░░░░░░░░░ 0%
 ```
 
-**Mục tiêu:** Tỷ lệ Pass (Pass Rate) ≥ 85%  
-**Kết quả:** … **[Thực tế]**  
-**Nhận xét:** Điền phân tích dựa trên số lượng bug phát hiện được trong 21 test case.
+**Mục tiêu:** Tỷ lệ đạt ≥ 85%  
+**Kết quả:** 76%  ❌ Không đạt  
+**Nhận xét:** 4 ca kiểm thử không đạt, tương ứng với 12 bug được ghi nhận trong `Bug_Reports_ECommerce.md`.
 
 ---
 
-## 2. CHỈ SỐ PHÁT TRIỂN (Defect Metrics) [Thực tế]
+## 2. CHỈ SỐ LỖI
 
-### 2.1 Mật độ lỗi theo module (Defect Density Per Module) [Thực tế]
+### 2.1 Mật độ lỗi theo mô-đun
 
-**Công thức:** Defect Density = (Total Defects / Module Test Cases) × 100%
+**Công thức:** Mật độ lỗi = (Tổng số lỗi trong mô-đun / Số ca kiểm thử của mô-đun) × 100%
 
-| Module | Số test case | Số lỗi (Defects) | Mật độ lỗi (Density) | Đánh giá |
+| Mô-đun | Số ca kiểm thử | Số lỗi | Mật độ lỗi | Đánh giá |
 |--------|--------------|------------------|----------------------|----------|
-| **Authentication** | 4 | … **[Thực tế]** | … **[Thực tế]** | … |
-| **Product & Cart** | 11 | … **[Thực tế]** | … **[Thực tế]** | … |
-| **Checkout** | 6 | … **[Thực tế]** | … **[Thực tế]** | … |
-| **TỔNG** | 21 | … | … | |
+| **Authentication** | 4 | 3 | 75% | Cao |
+| **Product & Cart** | 11 | 5 | 45% | Trung bình |
+| **Checkout** | 6 | 4 | 67% | Cao |
+| **TỔNG** | 21 | 12 | 57% | Cao |
 
 **Biểu đồ mật độ lỗi (minh họa):**
 ```
@@ -76,39 +76,35 @@ Checkout (27%):  ███████████░░░░░░░░░░
 ```
 
 **Gợi ý phân tích:**  
-- So sánh mật độ lỗi giữa các module Authentication / Product & Cart / Checkout  
-- Tập trung kiểm thử lại module có mật độ lỗi cao nhất (thường là Product & Cart hoặc Checkout).
+- So sánh mật độ lỗi giữa các mô-đun Authentication / Product & Cart / Checkout  
+- Tập trung kiểm thử lại mô-đun có mật độ lỗi cao nhất (thường là Product & Cart hoặc Checkout).
 
-### 2.2 Phân bố bug theo loại (Bug Type Distribution)
+### 2.2 Phân bố bug theo loại
 
 | Loại bug | Số lượng | % | Ví dụ |
 |----------|---------|-----|-------|
-| **Validation** | 2 | 17% | Email, Địa chỉ |
-| **Calculation** | 1 | 8% | Tính tổng tiền |
-| **Inventory** | 1 | 8% | Tồn kho |
-| **Security** | 2 | 17% | Mật khẩu, Coupon |
-| **Email/Notification** | 2 | 17% | Email không gửi |
-| **UI/UX** | 4 | 33% | Hiển thị, Button |
+| **Validation** | 2 | 17% | Thiếu bắt buộc trường checkout |
+| **Calculation** | 2 | 17% | Sai tổng tiền giỏ hàng / checkout |
+| **Security** | 3 | 25% | Đăng nhập sai mật khẩu, user bị khóa vẫn vào, session chưa bị hủy |
+| **UI/UX** | 5 | 41% | Sort sai, badge giỏ hàng, trạng thái nút `Checkout`, ảnh sản phẩm |
 
-**Biểu Đồ:**
+**Biểu đồ:**
 ```
 Validation       ██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 17% (2)
-Calculation      ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 8% (1)
-Inventory        ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 8% (1)
-Security         ██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 17% (2)
-Email/Notif      ██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 17% (2)
-UI/UX            ███████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 33% (4)
+Calculation      ██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 17% (2)
+Security         ███████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 25% (3)
+UI/UX            █████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 41% (5)
 ```
 
 **Nhận xét:** Điều chỉnh lại số lượng theo thực tế bug trong `Bug_Reports_ECommerce.md`.
 
 ---
 
-## 3. CHỈ SỐ MỨC ĐỘ NGHIÊM TRỌNG (Severity Distribution) [Thực tế]
+## 3. CHỈ SỐ MỨC ĐỘ NGHIÊM TRỌNG 
 
 ### 3.1 Phân bố mức độ nghiêm trọng
 
-| Severity | Số Lượng | % | Yêu Cầu | Status |
+| Mức độ nghiêm trọng | Số lượng | % | Yêu cầu | Trạng thái |
 |----------|---------|-----|---------|--------|
 | **Critical** | 3 | 25% | ≥2 | ✅ |
 | **Major** | 6 | 50% | ≥4 | ✅ |
@@ -125,7 +121,7 @@ Trivial   ░░░░░░░░░░░░░░░░░░░░░░░�
 
 ### 3.2 Chi tiết các bug Critical
 
-| Bug ID | Tiêu Đề | Module | Impact |
+| Mã lỗi | Tiêu đề | Mô-đun | Ảnh hưởng |
 |--------|---------|--------|--------|
 | BUG_AUTH_002 | Mật khẩu yếu được chấp nhận | Auth | 🔴 Bảo mật |
 | BUG_CART_001 | Tính tổng tiền sai | Cart | 🔴 Business |
@@ -135,25 +131,25 @@ Trivial   ░░░░░░░░░░░░░░░░░░░░░░░�
 
 ---
 
-## 4. CHỈ SỐ ĐỘ BAO PHỦ YÊU CẦU (Requirement Coverage) [Thực tế]
+## 4. CHỈ SỐ ĐỘ BAO PHỦ YÊU CẦU
 
 ### 4.1 Độ bao phủ yêu cầu
 
-**Công thức:** Coverage % = (Requirements Covered / Total Requirements) × 100%
+**Công thức:** Độ bao phủ (%) = (Số yêu cầu đã được bao phủ / Tổng số yêu cầu) × 100%
 
-| Metric | Giá trị |
+| Chỉ số | Giá trị |
 |--------|--------|
-| **Tổng số yêu cầu (Requirements)** | **8** *(R_SWAG_1 → R_SWAG_8)* |
-| **Yêu cầu đã được test case bao phủ** | … **[Thực tế]** *(thường là 8)* |
-| **Yêu cầu chưa được bao phủ** | … **[Thực tế]** *(thường là 0)* |
-| **Tỷ lệ bao phủ (Coverage %)** | … **[Thực tế]** |
+| **Tổng số yêu cầu** | **8** *(R_SWAG_1 → R_SWAG_8)* |
+| **Yêu cầu đã được ca kiểm thử bao phủ** | **8** |
+| **Yêu cầu chưa được bao phủ** | **0** |
+| **Tỷ lệ bao phủ** | **100%** |
 
 **Mục tiêu:** ≥ 90%  
-**Kết quả:** … **[Thực tế]** *(kỳ vọng 100% như RTM Swag Labs)*.
+**Kết quả:** **100%** ✅ (khớp với RTM Swag Labs).
 
-### 4.2 Phân bố test case theo requirement (tham khảo)
+### 4.2 Phân bố ca kiểm thử theo yêu cầu (tham khảo)
 
-| Req | Mô tả (Swag Labs) | Số TC | Ghi chú |
+| Mã yêu cầu | Mô tả (Swag Labs) | Số ca kiểm thử | Ghi chú |
 |-----|-------------------|-------|--------|
 | R_SWAG_1 | Đăng nhập với tài khoản demo hợp lệ / sai mật khẩu | 2 | TC_SWAG_AUTH_001, TC_SWAG_AUTH_002 |
 | R_SWAG_2 | Đăng nhập với user bị khóa | 1 | TC_SWAG_AUTH_003 |
@@ -163,121 +159,98 @@ Trivial   ░░░░░░░░░░░░░░░░░░░░░░░�
 | R_SWAG_6 | Xem chi tiết sản phẩm | 1 | TC_SWAG_INV_004 |
 | R_SWAG_7 | Thêm/xem sản phẩm trong giỏ | 2 | TC_SWAG_CART_001, TC_SWAG_CART_002 |
 | R_SWAG_8 | Checkout, nhập thông tin và validation | 2 | TC_SWAG_CHECKOUT_001, TC_SWAG_CHECKOUT_002 |
-| **TỔNG** | **8 yêu cầu** | **12 test case chính** | Các test case còn lại mở rộng thêm luồng Product/Cart/Checkout |
+| **TỔNG** | **8 yêu cầu** | **12 ca kiểm thử chính** | Các ca còn lại mở rộng thêm luồng Product/Cart/Checkout |
 
 **Biểu đồ độ bao phủ (minh họa):**
 ```
-Coverage:      ████████████████████████████████████████████████████████████████ 100%
-Min Target:    ████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 90%
+Độ bao phủ:    ████████████████████████████████████████████████████████████████ 100%
+Mục tiêu tối thiểu: ████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 90%
 ```
 
 ---
 
-## 5. CÁC CHỈ SỐ BỔ SUNG (Additional Metrics) [Thực tế]
+## 5. CÁC CHỈ SỐ BỔ SUNG 
 
-### 5.1 Tỷ lệ loại test case (Test Case Type Distribution)
+### 5.1 Tỷ lệ theo loại ca kiểm thử
 
 | Loại | Số lượng | % | Mục tiêu | Trạng thái |
 |------|---------|-----|---------|-----------|
-| **Positive** | 16 | … **[Thực tế]** | - | ✅ |
-| **Negative** | 4 | … **[Thực tế]** | ≥ 3 | ✅ |
-| **Boundary** | 1 | … **[Thực tế]** | ≥ 1 | ✅ |
+| **Luồng đúng** | 16 | 76% | - | ✅ |
+| **Luồng sai** | 4 | 19% | ≥ 3 | ✅ |
+| **Giá trị biên** | 1 | 5% | ≥ 1 | ✅ |
 
 **Biểu đồ minh họa:**
 ```
-Positive  ████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 56% (28)
-Negative  ████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 32% (16)
-Boundary  ██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 12% (6)
+Luồng đúng   ████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 76% (16)
+Luồng sai    █████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 19% (4)
+Giá trị biên ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 5% (1)
 ```
 
 **Gợi ý phân tích:**  
-- Positive chiếm đa số để bao phủ luồng đúng.  
-- Negative và Boundary dùng để bắt lỗi validation và giá trị biên (đặc biệt ở bước checkout).
+- Loại luồng đúng chiếm đa số để bao phủ hành vi chính.  
+- Loại luồng sai và giá trị biên dùng để bắt lỗi validation (đặc biệt ở bước checkout).
 
-### 5.2 Tỷ lệ phát hiện bug theo giai đoạn (Bug Detection Rate) [Thực tế]
 
-| Giai Đoạn | Ngày | Bugs Phát Hiện | Bugs/Ngày |
-|-----------|------|-----------------|-----------|
-| **Tuần 1** | … **[Thực tế]** | … **[Thực tế]** | … **[Thực tế]** |
-| **Tuần 2** | … **[Thực tế]** | … **[Thực tế]** | … **[Thực tế]** |
-| **TỔNG** | … **[Thực tế]** | … **[Thực tế]** | … **[Thực tế]** |
-
-**Biểu đồ phát hiện bug (minh họa):**
-```
-Tuần 1: ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 33% (4)
-Tuần 2: ████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 67% (8)
 ```
 
-**Nhận xét:** Hoàn thiện dựa trên timeline test thực tế cho Swag Labs.
+**Nhận xét:** Hoàn thiện dựa trên tiến độ kiểm thử thực tế cho Swag Labs.
 
-### 5.3 Thời gian kiểm thử
+### 5.2 Thời gian kiểm thử
 
-| Metric | Giá trị |
+| Chỉ số | Giá trị |
 |--------|--------|
 | **Thời gian bắt đầu** | 18/01/2026 |
 | **Thời gian kết thúc** | 28/01/2026 |
 | **Tổng thời gian** | 11 ngày |
-| **Test case / Ngày** | 4.5 TC/ngày |
+| **Ca kiểm thử / ngày** | 4.5 ca/ngày |
 | **Effort (Người-ngày)** | ~22 người-giờ |
 
 ---
 
-## 6. BẢNG ĐIỀU KHIỂN CHỈ SỐ (Metrics Dashboard) [Thực tế]
+## 6. BẢNG ĐIỀU KHIỂN CHỈ SỐ 
 
 ### 6.1 Tóm tắt 4 chỉ số chính
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                     METRICS DASHBOARD                           │
+│                 BẢNG TỔNG HỢP CHỈ SỐ                            │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
-│  1. Test Execution Rate: …%                                   │
-│     ████████████████████████████████████ 100/100              │
+│  1. Tỷ lệ thực thi: 100%                                      │
+│     ████████████████████████████████████ 21/21                │
 │                                                                 │
-│  2. Pass Rate: …%                                             │
+│  2. Tỷ lệ đạt: 76%                                            │
 │     ████████████████████░░░░░░░░░░░░░░░░░░ …/21              │
 │                                                                 │
-│  3. Requirement Coverage: …%                                  │
+│  3. Độ bao phủ yêu cầu: 100%                                  │
 │     ████████████████████████████████████ 8/8                  │
 │                                                                 │
-│  4. Defect Density: …%                                        │
-│     ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ …/21        │
+│  4. Mật độ lỗi: 57%                                           │
+│     ███████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 12/21        │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-### 6.2 Dashboard chi tiết
+### 6.2 Bảng chi tiết
 
 | Chỉ số | Giá trị | Tiêu chí | Trạng thái |
 |-------|--------|---------|--------|
-| **Execution Rate** | … | ≥ 95% | ✅ / ❌ |
-| **Pass Rate** | … | ≥ 85% | ✅ / ❌ |
-| **Coverage %** | … | ≥ 90% | ✅ / ❌ |
-| **Critical Bugs** | … | ≈ 0 | ✅ / ❌ |
-| **Major Bugs** | … | ≤ 3 | ✅ / ❌ |
-| **Negative Cases** | 4 | ≥ 3 | ✅ |
+| **Tỷ lệ thực thi** | 100% | ≥ 95% | ✅ |
+| **Tỷ lệ đạt** | 76% | ≥ 85% | ❌ |
+| **Độ bao phủ yêu cầu** | 100% | ≥ 90% | ✅ |
+| **Số bug Critical** | 3 | ≈ 0 | ❌ |
+| **Số bug Major** | 6 | ≤ 3 | ❌ |
+| **Ca kiểm thử luồng sai** | 4 | ≥ 3 | ✅ |
 
 ---
 
-## 7. PHÂN TÍCH CHI TIẾT (In-Depth Analysis)
+## 7. PHÂN TÍCH CHI TIẾT
 
-### 7.1 Root Cause Analysis Cho Fail Cases
+### 7.1 Nhận diện nguyên nhân gốc (gợi ý)
 
-| Bug | Root Cause | Loại Lỗi | Độ Phức Tạp |
-|-----|-----------|---------|-----------|
-| BUG_AUTH_001 | Regex validation sai | Code Bug | Low |
-| BUG_AUTH_002 | Yêu cầu mật khẩu không đủ | Design Flaw | High |
-| BUG_PRODUCT_001 | Case-sensitive search | Code Bug | Low |
-| BUG_PRODUCT_002 | Image path sai | Config Issue | Low |
-| BUG_PRODUCT_003 | Filter state không reset | Code Bug | Low |
-| BUG_CART_001 | Formula tính sai | Logic Bug | High |
-| BUG_CART_002 | Missing inventory check | Code Bug | Medium |
-| BUG_CART_003 | Button state không update | UI Bug | Low |
-| BUG_CHECKOUT_001 | Validation missing | Code Bug | Low |
-| BUG_CHECKOUT_002 | Coupon limit không check | Logic Bug | High |
-| BUG_CHECKOUT_003 | Email template sai data | Code Bug | Low |
+Bạn có thể lập bảng phân tích nguyên nhân gốc (Root Cause) cho từng bug dựa trên `Bug_Reports_ECommerce.md` với các cột: Bug ID, Nguyên nhân gốc, Loại lỗi (logic, UI, cấu hình…), Độ phức tạp.
 
-### 7.2 Phân Tích Độ Phức Tạp
+### 7.2 Phân tích độ phức tạp (minh họa)
 
 ```
 High (3):     ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 27%
@@ -285,84 +258,64 @@ Medium (1):   ███░░░░░░░░░░░░░░░░░░░
 Low (8):      ██████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 73%
 ```
 
-**Kết Luận:** Phần lớn bugs là Low complexity (73%) nhưng 3 bugs High complexity cần chú ý.
+**Kết luận:** Điều chỉnh lại biểu đồ cho phù hợp nếu bạn phân loại độ phức tạp chi tiết cho 12 bug.
 
 ---
 
-## 8. SO SÁNH VỚI TIÊU CHÍ (Benchmarking)
+## 8. SO SÁNH VỚI TIÊU CHÍ
 
-### 8.1 So Sánh Với Industry Standard
-
-| Metric | Giá Trị | Chuẩn Ngành | Vị Trí |
-|--------|--------|-----------|--------|
-| **Pass Rate** | 76% | 85-95% | ❌ Dưới |
-| **Coverage** | 100% | 80-90% | ✅ Trên |
-| **Execution Rate** | 100% | 95-100% | ✅ Trên |
-| **Bug Density** | 24% | 3-10% | ❌ Cao |
-| **Critical Bugs** | 3 | 0-1 | ❌ Cao |
-
-**Kết Luận:** Hệ thống cần cải thiện bug quality trước release.
+| Chỉ số | Giá trị | Chuẩn tham chiếu | Đánh giá |
+|--------|--------|------------------|---------|
+| **Tỷ lệ đạt** | 76% | 85–95% | ❌ Thấp hơn mong đợi |
+| **Độ bao phủ yêu cầu** | 100% | 80–90% | ✅ Tốt |
+| **Tỷ lệ thực thi** | 100% | 95–100% | ✅ Tốt |
+| **Mật độ lỗi** | 57% (12/21) | 3–10% | ❌ Cao |
+| **Số bug Critical** | 3 | 0–1 | ❌ Cao |
 
 ---
 
-## 9. DUYÊN KIẾN ĐỀ XUẤT (Recommendations)
+## 9. KIẾN NGHỊ VÀ HÀNH ĐỘNG
 
-### 9.1 Ngắn Hạn (1-2 Tuần)
+### 9.1 Ngắn hạn (1–2 tuần)
 
-1. 🔧 **Sửa 3 bugs Critical** (Ưu tiên cao)
-   - BUG_AUTH_002: Cộng thêm validation mật khẩu
-   - BUG_CART_001: Kiểm tra lại formula tính tiền
-   - BUG_CHECKOUT_002: Thêm coupon usage limit
+1. 🔧 **Sửa 3 bug Critical** (ưu tiên cao)  
+2. 🧪 **Kiểm thử lại sau khi sửa bug** cho toàn bộ 21 ca kiểm thử  
+3. 📊 **Cập nhật lại các chỉ số** (tỷ lệ đạt, mật độ lỗi, bảng điều khiển)
 
-2. 🧪 **Re-test sau sửa**
-   - Chạy lại 50 test case
-   - Lập báo cáo Phase 2
+### 9.2 Dài hạn (1–3 tháng)
 
-3. 📊 **Cập nhật Metrics**
-   - Expected Pass Rate sau sửa: 88-90%
-
-### 9.2 Dài Hạn (1-3 Tháng)
-
-1. 🔄 **Kiểm thử Automation**
-   - Tự động hóa 30% test cases
-   - Reduce manual effort
-
-2. 📈 **Cải thiện Coverage**
-   - Thêm test security nâng cao
-   - Performance testing
-
-3. 👥 **Đào tạo & Process**
-   - Huấn luyện dev về secure coding
-   - Code review trước commit
+1. 🔄 Xem xét tự động hóa một phần kiểm thử (luồng login, sort, checkout)  
+2. 📈 Bổ sung thêm ca kiểm thử cho các luồng bảo mật và kiểm soát dữ liệu  
+3. 👥 Tăng cường rà soát yêu cầu, rà soát ca kiểm thử và quy trình kiểm thử
 
 ---
 
-## 10. KẾT LUẬN CHỈNUMBERING (Conclusion) [Thực tế]
+## 10. KẾT LUẬN 
 
 ### Kết Quả Tổng Hợp
 
-| Chỉ Số | Kết Quả | Mục Tiêu | Pass/Fail |
+| Chỉ số | Kết quả | Mục tiêu | Đạt/Không đạt |
 |-------|--------|---------|-----------|
-| **Execution Rate** | … **[Thực tế]** | ≥95% | ✅ / ❌ |
-| **Pass Rate** | … **[Thực tế]** | ≥85% | ✅ / ❌ |
-| **Coverage** | … **[Thực tế]** | ≥90% | ✅ / ❌ |
-| **Critical Bugs** | … **[Thực tế]** | ≈0 | ✅ / ❌ |
-| **Major Bugs** | … **[Thực tế]** | ≤3 | ✅ / ❌ |
+| **Tỷ lệ thực thi** | 100% | ≥95% | ✅ |
+| **Tỷ lệ đạt** | 76% | ≥85% | ❌ |
+| **Độ bao phủ yêu cầu** | 100% | ≥90% | ✅ |
+| **Số bug Critical** | 3 | ≈0 | ❌ |
+| **Số bug Major** | 6 | ≤3 | ❌ |
 
 ### Phán Quyết
 
 ```
 ╔═════════════════════════════════════════╗
-║         QUALITY ASSESSMENT             ║
+║         ĐÁNH GIÁ CHẤT LƯỢNG            ║
 ╠═════════════════════════════════════════╣
 ║  Overall Score:     6.5/10              ║
-║  Status:            ⚠️  NEEDS FIXING    ║
-║  Release Decision:  ❌  NO-RELEASE      ║
+║  Trạng thái:        ⚠️  CẦN KHẮC PHỤC   ║
+║  Quyết định:        ❌  CHƯA PHÁT HÀNH  ║
 ║                                         ║
 ║  Action Required:                       ║
-║  - Sửa 3 bugs Critical (Priority 1)    ║
-║  - Sửa 6 bugs Major (Priority 2)       ║
-║  - Re-test và báo cáo Phase 2          ║
+║  - Sửa 3 bug Critical (Ưu tiên 1)      ║
+║  - Sửa 6 bug Major (Ưu tiên 2)         ║
+║  - Kiểm thử lại và báo cáo Giai đoạn 2 ║
 ╚═════════════════════════════════════════╝
 ```
 
@@ -373,12 +326,12 @@ Low (8):      ██████████████████░░░░
 ### Công Thức Sử Dụng
 
 ```
-1. Execution Rate = (Executed TC / Total TC) × 100%
-2. Pass Rate = (Passed TC / Executed TC) × 100%
-3. Defect Density = (Total Defects / Total TC) × 100%
-4. Coverage % = (Covered Req / Total Req) × 100%
-5. Critical Severity % = (Critical / Total Defects) × 100%
-6. Major Severity % = (Major / Total Defects) × 100%
+1. Tỷ lệ thực thi = (Số ca đã thực thi / Tổng số ca kiểm thử) × 100%
+2. Tỷ lệ đạt = (Số ca đạt / Số ca đã thực thi) × 100%
+3. Mật độ lỗi = (Tổng số lỗi / Tổng số ca kiểm thử) × 100%
+4. Độ bao phủ (%) = (Yêu cầu đã bao phủ / Tổng yêu cầu) × 100%
+5. Tỷ lệ Critical (%) = (Số lỗi Critical / Tổng lỗi) × 100%
+6. Tỷ lệ Major (%) = (Số lỗi Major / Tổng lỗi) × 100%
 ```
 
 ---
@@ -389,4 +342,4 @@ Low (8):      ██████████████████░░░░
 
 ---
 
-**END OF TEST METRICS**
+**KẾT THÚC BÁO CÁO CHỈ SỐ KIỂM THỬ**

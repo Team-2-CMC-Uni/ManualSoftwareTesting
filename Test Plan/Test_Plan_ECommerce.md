@@ -99,7 +99,7 @@ Mục đích kiểm thử:
 ### 4.3 Công cụ sử dụng
 
 * Công cụ phát triển trình duyệt Chrome
-* Google Sheets hoặc Excel để quản lý test case và lỗi
+* Google Sheets hoặc Excel để quản lý ca kiểm thử và lỗi
 * Ảnh chụp màn hình
 
 ---
@@ -115,7 +115,7 @@ Mục đích kiểm thử:
 
 ### 5.2 Điều kiện ra
 
-* Tất cả test case đã được thực thi
+* Tất cả ca kiểm thử đã được thực thi
 * Độ bao phủ yêu cầu đạt từ 90% trở lên
 * Tất cả lỗi nghiêm trọng đã được ghi nhận
 * Báo cáo kiểm thử hoàn thành
@@ -140,7 +140,7 @@ Mục đích kiểm thử:
 | Vai trò              | Trách nhiệm                              |
 | -------------------- | ---------------------------------------- |
 | Trưởng nhóm kiểm thử | Quản lý tiến độ, phê duyệt tài liệu      |
-| Phân tích kiểm thử   | Thiết kế test case, lập ma trận truy vết |
+| Phân tích kiểm thử   | Thiết kế ca kiểm thử, lập ma trận truy vết |
 | Kiểm thử viên        | Thực thi test, ghi nhận lỗi              |
 | Quản lý chất lượng   | Báo cáo và quyết định phát hành          |
 
@@ -150,7 +150,7 @@ Mục đích kiểm thử:
 
 | Giai đoạn | Công việc                            | Thời gian (ngày) |
 | --------- | ------------------------------------ | ---------------- |
-| Chuẩn bị  | Thiết kế test case, ma trận truy vết | 3                |
+| Chuẩn bị  | Thiết kế ca kiểm thử, ma trận truy vết | 3                |
 | Thực thi  | Chạy test, ghi nhận lỗi              | 5                |
 | Phân tích | Tổng hợp và phân tích kết quả        | 2                |
 | Báo cáo   | Hoàn thành báo cáo kiểm thử          | 1                |
@@ -162,7 +162,7 @@ Mục đích kiểm thử:
 
 Hệ thống **sẵn sàng phát hành** khi:
 
-* 100% test case được thực thi
+* 100% ca kiểm thử được thực thi
 * Tỷ lệ đạt từ 85% trở lên
 * Không còn lỗi nghiêm trọng
 * Độ bao phủ yêu cầu từ 90% trở lên
