@@ -157,7 +157,7 @@
 
 ---
 
-## Mô-đun 2: PRODUCT & CART (20 ca kiểm thử)
+## Mô-đun 2: PRODUCT & CART
 
 ### TC_PRODUCT_001: Xem chi tiết sản phẩm
 | Trường | Nội dung |
@@ -290,6 +290,7 @@
 ---
 
 **KẾT THÚC CA KIỂM THỬ**
+
 
 
 
