@@ -1,25 +1,22 @@
 # BÁO CÁO KIỂM THỬ (TEST REPORT)
-## Website Swag Labs (Saucedemo.com) – Bản Mẫu & Thực Tế
+## Website Swag Labs (Saucedemo.com) 
 
-**Ngày báo cáo (Swag Labs) [Thực tế]:** …  
-**Giai đoạn kiểm thử:** Manual QA – Swag Labs  
-**Trạng thái báo cáo:** Draft (cập nhật sau khi thực thi [Thực tế])
 
 ---
 
-## 1. TỔNG QUAN KIỂM THỬ [Thực tế]
+## 1. TỔNG QUAN KIỂM THỬ 
 
-### 1.1 Thông Tin Chung [Thực tế]
+### 1.1 Thông Tin Chung 
 
 | Thông Tin | Chi Tiết |
 |-----------|---------|
 | **Hệ thống** | Website Swag Labs (`https://www.saucedemo.com/`) |
-| **Phiên bản test** | v1.0 (demo luyện tập) |
-| **Ngày bắt đầu** | … **[Thực tế]** |
-| **Ngày kết thúc** | … **[Thực tế]** |
-| **Tổng thời gian** | … **[Thực tế]** |
-| **Tester** | Nhóm Manual Testing |
-| **Trình duyệt** | Chrome 120 |
+| **Phiên bản test** | v1.0 (luyện tập) |
+| **Ngày bắt đầu** | … **20/02/2026** |
+| **Ngày kết thúc** | … **22/02/2026** |
+| **Tổng thời gian** | … **2 ngày** |
+| **Tester** | Toàn thể nhóm 2 |
+| **Trình duyệt** | Chrome, Brave |
 | **OS** | Windows 10/11 |
 
 ### 1.2 Mục Tiêu Kiểm Thử
@@ -45,8 +42,8 @@
 
 | Trạng Thái | Số Lượng | % | Biểu Tượng |
 |-----------|---------|------|-----------|
-| **Pass** | … | … | ✅ / ❌ **[Thực tế]** |
-| **Fail** | … | … | ❌ **[Thực tế]** |
+| **Pass** | … | … | ✅ / ❌ |
+| **Fail** | … | … | ❌  |
 | **Blocked** | 0 | 0% | 🚫 |
 | **Skipped** | 0 | 0% | ⏭️ |
 
