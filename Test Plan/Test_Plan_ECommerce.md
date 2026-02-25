@@ -1,17 +1,20 @@
 # KẾ HOẠCH KIỂM THỬ
 
-## Hệ Thống Web Bán Hàng Online (Thương mại điện tử)
+## Website Swag Labs (Saucedemo.com)
 
 **Phiên bản:** 1.0
+
 **Ngày tạo:** 28/01/2026
+
 **Nhóm:** Nhóm kiểm thử thủ công
+
 **Trạng thái:** Đã phê duyệt
 
 ---
 
 ## 1. GIỚI THIỆU
 
-Tài liệu này mô tả kế hoạch kiểm thử thủ công cho hệ thống website bán hàng online. Hệ thống cung cấp các chức năng chính như: xác thực người dùng, quản lý sản phẩm và giỏ hàng, xử lý thanh toán.
+Tài liệu này mô tả kế hoạch kiểm thử thủ công cho website Swag Labs (`https://www.saucedemo.com/`). Hệ thống demo này cung cấp các chức năng chính như: đăng nhập, xem danh sách sản phẩm, quản lý giỏ hàng và quy trình checkout.
 
 Mục đích kiểm thử:
 
@@ -26,23 +29,24 @@ Mục đích kiểm thử:
 
 ### 2.1 Trong phạm vi
 
-| Mô-đun                  | Tính năng                   | Mô tả                                        |
-| ----------------------- | --------------------------- | -------------------------------------------- |
-| **Xác thực**            | Đăng ký tài khoản           | Tạo tài khoản mới bằng email và mật khẩu     |
-|                         | Đăng nhập                   | Xác thực thông tin đăng nhập                 |
-|                         | Quên mật khẩu               | Gửi email đặt lại mật khẩu                   |
-|                         | Đăng xuất                   | Kết thúc phiên làm việc                      |
-| **Sản phẩm & Giỏ hàng** | Tìm kiếm sản phẩm           | Hiển thị kết quả tìm kiếm chính xác          |
-|                         | Lọc theo giá/danh mục       | Lọc sản phẩm theo điều kiện                  |
-|                         | Xem chi tiết sản phẩm       | Hiển thị đầy đủ thông tin                    |
-|                         | Quản lý giỏ hàng            | Thêm, cập nhật, xoá sản phẩm                 |
-| **Thanh toán**          | Nhập địa chỉ giao hàng      | Kiểm tra và xác thực dữ liệu địa chỉ         |
-|                         | Chọn phương thức thanh toán | Thanh toán khi nhận hàng / Thẻ Visa mô phỏng |
-|                         | Đặt hàng                    | Tạo đơn hàng thành công                      |
-|                         | Lịch sử đơn hàng            | Xem danh sách đơn hàng đã mua                |
+| Mô-đun                    | Tính năng                          | Mô tả                                                                 |
+| ------------------------- | ---------------------------------- | --------------------------------------------------------------------- |
+| **Xác thực**             | Đăng nhập vào hệ thống [Thực tế]   | Đăng nhập với các tài khoản demo có sẵn, xử lý trường hợp đúng/sai   |
+|                           | Đăng xuất hệ thống [Thực tế]       | Đăng xuất qua menu bên trái, đảm bảo phiên làm việc được kết thúc    |
+|                           | Thông báo lỗi đăng nhập [Thực tế]  | Hiển thị và xử lý thông báo khi nhập sai username/password           |
+| **Sản phẩm & Giỏ hàng**  | Xem danh sách sản phẩm [Thực tế]   | Hiển thị đúng tên, giá, mô tả, hình ảnh trên trang Inventory         |
+|                           | Sắp xếp sản phẩm [Thực tế]         | Kiểm tra các tuỳ chọn sắp xếp (A to Z, Z to A, Low-High, High-Low)   |
+|                           | Xem chi tiết sản phẩm [Thực tế]    | Mở trang chi tiết sản phẩm, thông tin và nút Add to cart              |
+|                           | Quản lý giỏ hàng [Thực tế]         | Thêm/xoá sản phẩm vào/ra giỏ hàng từ nhiều vị trí khác nhau          |
+| **Checkout (Thanh toán)**| Nhập thông tin khách hàng [Thực tế]| Nhập First Name, Last Name, Postal Code và kiểm tra tính hợp lệ      |
+|                           | Xem lại đơn hàng [Thực tế]         | Kiểm tra trang Overview: sản phẩm, số lượng, thuế, tổng tiền         |
+|                           | Hoàn tất đặt hàng [Thực tế]        | Hoàn tất checkout và hiển thị trang xác nhận đơn hàng                 |
+| **Điều hướng & Menu**    | Menu bên trái [Thực tế]            | Kiểm tra các mục All Items, About, Logout, Reset App State            |
+|                           | Biểu tượng giỏ hàng [Thực tế]      | Hiển thị số lượng sản phẩm, điều hướng đúng tới trang giỏ hàng       |
 
 ### 2.2 Ngoài phạm vi
 
+* Đăng ký tài khoản và quên mật khẩu (không tồn tại trên website demo)
 * Kiểm thử hiệu năng
 * Kiểm thử bảo mật nâng cao
 * Kiểm thử tự động
@@ -69,7 +73,6 @@ Mục đích kiểm thử:
 * Phân tích giá trị biên
 * Bảng quyết định
 * Kiểm thử hộp đen
-* Kiểm thử hộp trắng
 
 ---
 
@@ -86,12 +89,12 @@ Mục đích kiểm thử:
 
 ### 4.2 Dữ liệu kiểm thử
 
-| Loại dữ liệu | Chi tiết                                 |
-| ------------ | ---------------------------------------- |
-| Tài khoản    | 10 tài khoản kiểm thử                    |
-| Sản phẩm     | Trên 50 sản phẩm                         |
-| Giá cả       | Từ 50.000đ đến 5.000.000đ                |
-| Danh mục     | Điện tử, Thời trang, Gia dụng, Thực phẩm |
+| Loại dữ liệu | Chi tiết                                                                 |
+| ------------ | ------------------------------------------------------------------------ |
+| Tài khoản    | Danh sách tài khoản demo có sẵn trên `https://www.saucedemo.com/` [Thực tế] |
+| Sản phẩm     | Danh sách sản phẩm hiển thị trên trang Inventory [Thực tế]              |
+| Giá cả       | Giá sản phẩm và tổng tiền đúng như hiển thị trên hệ thống [Thực tế]     |
+| Danh mục     | Không phân loại danh mục, sử dụng danh sách sản phẩm mặc định           |
 
 ### 4.3 Công cụ sử dụng
 
