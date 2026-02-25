@@ -65,7 +65,7 @@
 | **Loại** | Positive |
 | **Priority** | High |
 | **Điều kiện trước** | Người dùng đã login thành công |
-| **Các bước thực hiện** | 1. Quan sát danh sách sản phẩm trên trang Inventory<br/>2. Kiểm tra tên, giá, mô tả, hình ảnh của một vài sản phẩm đại diện **[Thực tế]** |
+| **Các bước thực hiện** | 1. Quan sát danh sách sản phẩm trên trang Inventory<br/>2. Kiểm tra tên, giá, mô tả, hình ảnh của một vài sản phẩm đại diện ** ** |
 | **Kết quả mong đợi** | Mỗi sản phẩm hiển thị đầy đủ tên, giá, mô tả ngắn, hình ảnh; không bị vỡ layout |
 | **Liên quan đến** | R_SWAG_4 |
 
@@ -77,7 +77,7 @@
 | **Loại** | Positive |
 | **Priority** | Medium |
 | **Điều kiện trước** | Người dùng ở trang Inventory |
-| **Các bước thực hiện** | 1. Chọn sort `Name (A to Z)`<br/>2. Ghi nhận thứ tự một vài sản phẩm **[Thực tế]**<br/>3. Chọn sort `Name (Z to A)`<br/>4. So sánh thứ tự hiển thị |
+| **Các bước thực hiện** | 1. Chọn sort `Name (A to Z)`<br/>2. Ghi nhận thứ tự một vài sản phẩm ** **<br/>3. Chọn sort `Name (Z to A)`<br/>4. So sánh thứ tự hiển thị |
 | **Kết quả mong đợi** | Danh sách sắp xếp đúng theo alphabet tăng dần/giảm dần |
 | **Liên quan đến** | R_SWAG_5 |
 
@@ -89,7 +89,7 @@
 | **Loại** | Positive |
 | **Priority** | Medium |
 | **Điều kiện trước** | Người dùng ở trang Inventory |
-| **Các bước thực hiện** | 1. Chọn sort `Price (low to high)`<br/>2. Ghi lại giá của một số sản phẩm đầu danh sách **[Thực tế]**<br/>3. Chọn sort `Price (high to low)`<br/>4. So sánh lại thứ tự giá |
+| **Các bước thực hiện** | 1. Chọn sort `Price (low to high)`<br/>2. Ghi lại giá của một số sản phẩm đầu danh sách ** **<br/>3. Chọn sort `Price (high to low)`<br/>4. So sánh lại thứ tự giá |
 | **Kết quả mong đợi** | Sản phẩm được sắp xếp đúng theo giá tăng dần/giảm dần |
 | **Liên quan đến** | R_SWAG_5 |
 
@@ -101,7 +101,7 @@
 | **Loại** | Positive |
 | **Priority** | High |
 | **Điều kiện trước** | Người dùng ở trang Inventory |
-| **Các bước thực hiện** | 1. Click vào tên hoặc hình của một sản phẩm bất kỳ **[Thực tế]**<br/>2. Quan sát trang chi tiết |
+| **Các bước thực hiện** | 1. Click vào tên hoặc hình của một sản phẩm bất kỳ ** **<br/>2. Quan sát trang chi tiết |
 | **Kết quả mong đợi** | Trang chi tiết hiển thị đúng tên, mô tả, giá, nút Add to cart/Remove, nút Back to products |
 | **Liên quan đến** | R_SWAG_6 |
 
@@ -115,7 +115,7 @@
 | **Loại** | Positive |
 | **Priority** | High |
 | **Điều kiện trước** | Người dùng ở trang Inventory, giỏ hàng đang trống |
-| **Các bước thực hiện** | 1. Click `Add to cart` của một sản phẩm **[Thực tế]**<br/>2. Quan sát badge số ở icon giỏ hàng |
+| **Các bước thực hiện** | 1. Click `Add to cart` của một sản phẩm ** **<br/>2. Quan sát badge số ở icon giỏ hàng |
 | **Kết quả mong đợi** | Badge hiển thị số `1`, nút trên sản phẩm đổi thành `Remove` |
 | **Liên quan đến** | R_SWAG_7 |
 
@@ -127,7 +127,7 @@
 | **Loại** | Positive |
 | **Priority** | High |
 | **Điều kiện trước** | Có ít nhất 1 sản phẩm trong giỏ |
-| **Các bước thực hiện** | 1. Click icon giỏ hàng<br/>2. Đối chiếu tên, giá, số lượng sản phẩm trong giỏ với trang Inventory **[Thực tế]** |
+| **Các bước thực hiện** | 1. Click icon giỏ hàng<br/>2. Đối chiếu tên, giá, số lượng sản phẩm trong giỏ với trang Inventory ** ** |
 | **Kết quả mong đợi** | Thông tin sản phẩm trong giỏ khớp với sản phẩm đã chọn, tổng tiền item được hiển thị đúng |
 | **Liên quan đến** | R_SWAG_7 |
 
@@ -143,7 +143,7 @@
 | **Kết quả mong đợi** | Hiển thị trang hoàn tất đơn hàng (THANK YOU), có nút `Back Home` |
 | **Liên quan đến** | R_SWAG_8 |
 
-#### TC_SWAG_CHECKOUT_002: Bắt buộc nhập thông tin ở bước checkout [Thực tế]
+#### TC_SWAG_CHECKOUT_002: Bắt buộc nhập thông tin ở bước checkout  
 | Trường | Nội dung |
 |--------|---------|
 | **TC_ID** | TC_SWAG_CHECKOUT_002 |
@@ -159,7 +159,7 @@
 
 ## MODULE 2: PRODUCT & CART (20 Test Cases)
 
-### TC_PRODUCT_007: Xem chi tiết sản phẩm
+### TC_PRODUCT_001: Xem chi tiết sản phẩm
 | Trường | Nội dung |
 |--------|---------|
 | **TC_ID** | TC_PRODUCT_007 |
@@ -184,8 +184,7 @@
 | **Liên quan đến** | R10 |
 
 
-
-### TC_CART_005: Xem giỏ hàng
+### TC_CART_002: Xem giỏ hàng
 | Trường | Nội dung |
 |--------|---------|
 | **TC_ID** | TC_CART_005 |
@@ -198,7 +197,7 @@
 | **Liên quan đến** | R11 |
 
 
-### TC_CART_007: Xoá sản phẩm khỏi giỏ
+### TC_CART_003: Xoá sản phẩm khỏi giỏ
 | Trường | Nội dung |
 |--------|---------|
 | **TC_ID** | TC_CART_007 |
@@ -210,7 +209,7 @@
 | **Kết quả mong đợi** | Sản phẩm bị xoá, giỏ hàng cập nhật |
 | **Liên quan đến** | R12 |
 
-### TC_CART_008: Giỏ hàng trống
+### TC_CART_004: Giỏ hàng trống
 | Trường | Nội dung |
 |--------|---------|
 | **TC_ID** | TC_CART_008 |
@@ -263,7 +262,7 @@
 | **Liên quan đến** | R13 |
 
 
-### TC_CHECKOUT_007: Tính tổng tiền chính xác
+### TC_CHECKOUT_003: Tính tổng tiền chính xác
 | Trường | Nội dung |
 |--------|---------|
 | **TC_ID** | TC_CHECKOUT_007 |
@@ -282,19 +281,16 @@
 
 | Module | Tổng TC | Positive | Negative | Boundary |
 |--------|---------|----------|----------|----------|
-| Authentication | 15 | 6 | 7 | 2 |
-| Product & Cart | 20 | 13 | 5 | 2 |
-| Checkout | 15 | 9 | 4 | 2 |
-| **TỔNG CỘNG** | **50** | **28** | **16** | **6** |
+| Authentication | 12 | 10 | 2 | 0 |
+| Product & Cart | 5 | 5 | 0 | 0 |
+| Checkout | 4 | 2 | 1 | 1 |
+| **TỔNG CỘNG** | **21** | **17** | **3** | **1** |
 
-**Yêu cầu:** ≥45 test case ✅ (50 TC)  
-**Negative cases:** ≥10 ✅ (16 TC)  
-**Boundary cases:** ≥5 ✅ (6 TC)  
-**Security validation:** ≥5 ✅ (TC_AUTH_015, TC_CART_002, TC_CHECKOUT_002, TC_CHECKOUT_003, TC_CHECKOUT_006)
 
 ---
 
 **END OF TEST CASES**
+
 
 
 
