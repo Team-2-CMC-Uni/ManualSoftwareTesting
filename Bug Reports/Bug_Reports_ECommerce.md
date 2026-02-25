@@ -1,8 +1,13 @@
 # BÁO CÁO LỖI (BUG REPORTS)
-## Hệ Thống Web Bán Hàng Online (E-Commerce)
+## Website Swag Labs (Saucedemo.com) + Demo E-Commerce
 
-**Tổng số Bug:** 12  
-**Ngày lập báo cáo:** 28/01/2026
+**Tổng số Bug (Swag Labs) [Thực tế]:** …  
+**Ngày lập báo cáo (Swag Labs) [Thực tế]:** …
+
+> Lưu ý: Các BUG_XXX bên dưới là **bug demo** cho hệ thống e-commerce giả lập.  
+> Khi test Swag Labs, bạn có thể:
+> - Thêm các mục bug mới với ID dạng `BUG_SWAG_001`, `BUG_SWAG_002`, … và đánh dấu **`[Thực tế]`**  
+> - Hoặc tạo file bug riêng dành cho Swag Labs.
 
 ---
 

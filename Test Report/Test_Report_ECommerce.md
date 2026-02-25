@@ -1,23 +1,23 @@
 # BÁO CÁO KIỂM THỬ (TEST REPORT)
-## Hệ Thống Web Bán Hàng Online (E-Commerce)
+## Website Swag Labs (Saucedemo.com) – Bản Mẫu & Thực Tế
 
-**Ngày báo cáo:** 28/01/2026  
-**Giai đoạn kiểm thử:** Manual QA - Phase 1  
-**Trạng thái báo cáo:** Final
+**Ngày báo cáo (Swag Labs) [Thực tế]:** …  
+**Giai đoạn kiểm thử:** Manual QA – Swag Labs  
+**Trạng thái báo cáo:** Draft (cập nhật sau khi thực thi [Thực tế])
 
 ---
 
-## 1. TỔNG QUAN KIỂM THỬ
+## 1. TỔNG QUAN KIỂM THỬ [Thực tế]
 
-### 1.1 Thông Tin Chung
+### 1.1 Thông Tin Chung [Thực tế]
 
 | Thông Tin | Chi Tiết |
 |-----------|---------|
-| **Hệ thống** | Website Bán Hàng Online (E-Commerce) |
-| **Phiên bản test** | v1.0 |
-| **Ngày bắt đầu** | 18/01/2026 |
-| **Ngày kết thúc** | 28/01/2026 |
-| **Tổng thời gian** | 11 ngày |
+| **Hệ thống** | Website Swag Labs (`https://www.saucedemo.com/`) |
+| **Phiên bản test** | v1.0 (demo luyện tập) |
+| **Ngày bắt đầu** | … **[Thực tế]** |
+| **Ngày kết thúc** | … **[Thực tế]** |
+| **Tổng thời gian** | … **[Thực tế]** |
 | **Tester** | Nhóm Manual Testing |
 | **Trình duyệt** | Chrome 120 |
 | **OS** | Windows 10/11 |
@@ -31,40 +31,40 @@
 
 ---
 
-## 2. KẾT QUẢ KIỂM THỬ TỔNG THỂ
+## 2. KẾT QUẢ KIỂM THỬ TỔNG THỂ [Thực tế]
 
-### 2.1 Thống Kê Thực Thi Test
+### 2.1 Thống Kê Thực Thi Test [Thực tế]
 
 | Metric | Giá Trị |
 |--------|--------|
-| **Tổng Test Case** | 50 |
-| **Đã Thực Thi** | 50 |
-| **Execution Rate** | **100%** ✅ |
+| **Tổng Test Case** | … **[Thực tế]** |
+| **Đã Thực Thi** | … **[Thực tế]** |
+| **Execution Rate** | … **[Thực tế]** |
 
-### 2.2 Kết Quả Chi Tiết
+### 2.2 Kết Quả Chi Tiết [Thực tế]
 
 | Trạng Thái | Số Lượng | % | Biểu Tượng |
 |-----------|---------|------|-----------|
-| **Pass** | 38 | 76% | ✅ |
-| **Fail** | 12 | 24% | ❌ |
+| **Pass** | … | … | ✅ / ❌ **[Thực tế]** |
+| **Fail** | … | … | ❌ **[Thực tế]** |
 | **Blocked** | 0 | 0% | 🚫 |
 | **Skipped** | 0 | 0% | ⏭️ |
 
-**Pass Rate:** 76% (Mục tiêu: ≥85%)  
-**Fail Rate:** 24% (Có 12 bug)
+**Pass Rate:** … **[Thực tế]** (Mục tiêu: ≥85%)  
+**Fail Rate:** … **[Thực tế]**
 
-### 2.3 Kết Quả theo Module
+### 2.3 Kết Quả theo Module [Thực tế]
 
 | Module | Total | Pass | Fail | Pass % | Fail % |
 |--------|-------|------|------|--------|--------|
-| **Authentication** | 15 | 12 | 3 | 80% | 20% |
-| **Product & Cart** | 20 | 15 | 5 | 75% | 25% |
-| **Checkout** | 15 | 11 | 4 | 73% | 27% |
-| **TỔNG** | **50** | **38** | **12** | **76%** | **24%** |
+| **Login & Logout** | … | … | … | … | … |
+| **Inventory & Cart** | … | … | … | … | … |
+| **Checkout** | … | … | … | … | … |
+| **TỔNG** | … | … | … | … | … |
 
 ---
 
-## 3. CHI TIẾT KẾT QUẢ THEO MODULE
+## 3. CHI TIẾT KẾT QUẢ THEO MODULE (PHẦN DEMO – THAM KHẢO)
 
 ### 3.1 Module: Authentication (15 Test Cases)
 
@@ -139,7 +139,7 @@
 
 ---
 
-## 4. TOP 5 LỖI NGHIÊM TRỌNG NHẤT
+## 4. TOP 5 LỖI NGHIÊM TRỌNG NHẤT (PHẦN DEMO)
 
 ### 🔴 Lỗi Critical
 
@@ -158,7 +158,7 @@
 
 ---
 
-## 5. PHÂN TÍCH LỖI THEO SEVERITY
+## 5. PHÂN TÍCH LỖI THEO SEVERITY (PHẦN DEMO)
 
 ### Biểu Đồ Severity Distribution
 
@@ -212,7 +212,7 @@ Minor     ████████████████░░░░░░░�
 
 ---
 
-## 7. COVERAGE REQUIREMENT
+## 7. COVERAGE REQUIREMENT (PHẦN DEMO)
 
 | Metric | Giá Trị | Mục Tiêu | Kết Quả |
 |--------|--------|---------|---------|
@@ -223,32 +223,28 @@ Minor     ████████████████░░░░░░░�
 
 ---
 
-## 8. QUYẾT ĐỊNH RELEASE
+## 8. QUYẾT ĐỊNH RELEASE [Thực tế]
 
 ### 📊 Tiêu Chí Quyết Định
 
 | Tiêu Chí | Yêu Cầu | Kết Quả | Status |
 |----------|---------|---------|--------|
-| **Pass Rate** | ≥85% | 76% | ❌ FAIL |
-| **Bugs Critical** | 0 | 3 | ❌ FAIL |
-| **Coverage** | ≥90% | 100% | ✅ PASS |
-| **Regression** | ✅ OK | ✅ OK | ✅ PASS |
+| **Pass Rate** | ≥85% | … **[Thực tế]** | ✅ / ❌ |
+| **Bugs Critical** | 0 | … **[Thực tế]** | ✅ / ❌ |
+| **Coverage** | ≥90% | … **[Thực tế]** | ✅ / ❌ |
+| **Regression** | ✅ OK | … **[Thực tế]** | ✅ / ❌ |
 
 ### 🎯 QUYẾT ĐỊNH CUỐI CÙNG
 
-## ❌ **NO-RELEASE**
+> Phần dưới là mẫu, bạn thay thế bằng kết luận thực tế sau khi test Swag Labs.
 
-**Lý Do:**
-1. ❌ **3 bugs Critical còn mở** - Cần sửa ngay
-2. ❌ **Pass rate 76% < 85%** - Chưa đủ chất lượng
-3. ❌ **Lỗi bảo mật** - Mật khẩu weak không bị chặn
-4. ❌ **Lỗi tính tiền** - Sai kết quả thanh toán
+## ❌/**✅** **QUYẾT ĐỊNH RELEASE [Thực tế]**
 
-**Khuyến Nghị:**
-- 🔧 Sửa 3 bugs Critical (2-3 ngày)
-- 🔧 Sửa 6 bugs Major (4-5 ngày)
-- ✅ Re-test sau khi sửa
-- 📋 Cập nhật báo cáo
+**Lý Do:**  
+- Ghi rõ dựa trên số liệu Pass Rate, số bug Critical/Major,… **[Thực tế]**
+
+**Khuyến Nghị [Thực tế]:**
+- Các hạng mục cần sửa/retet cụ thể cho Swag Labs
 
 ---
 

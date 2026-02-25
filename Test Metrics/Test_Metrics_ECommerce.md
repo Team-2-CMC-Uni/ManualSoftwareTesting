@@ -1,23 +1,23 @@
 # CHỈ SỐ KIỂM THỬ (TEST METRICS)
-## Hệ Thống Web Bán Hàng Online (E-Commerce)
+## Website Swag Labs (Saucedemo.com) – Công Thức & Mẫu Số Liệu
 
-**Ngày lập báo cáo:** 28/01/2026  
-**Giai đoạn:** Phase 1 - Manual QA Testing
+**Ngày lập báo cáo (Swag Labs) [Thực tế]:** …  
+**Giai đoạn:** Manual QA – Swag Labs
 
 ---
 
-## 1. CHỈ SỐ CHÍNH (Key Metrics)
+## 1. CHỈ SỐ CHÍNH (Key Metrics) [Thực tế]
 
-### 1.1 Tỷ Lệ Thực Thi Test (Test Execution Rate)
+### 1.1 Tỷ Lệ Thực Thi Test (Test Execution Rate) [Thực tế]
 
 **Công thức:** Execution Rate = (Test Executed / Total Test Cases) × 100%
 
 | Metric | Giá Trị |
 |--------|--------|
-| **Tổng Test Case** | 50 |
-| **Test Executed** | 50 |
-| **Test Not Executed** | 0 |
-| **Execution Rate** | **100%** ✅ |
+| **Tổng Test Case** | … **[Thực tế]** |
+| **Test Executed** | … **[Thực tế]** |
+| **Test Not Executed** | … **[Thực tế]** |
+| **Execution Rate** | … **[Thực tế]** |
 
 **Biểu Đồ:**
 ```
@@ -29,18 +29,18 @@ Not Executed:  ░░░░░░░░░░░░░░░░░░░░░�
 
 ---
 
-### 1.2 Tỷ Lệ Vượt Qua Test (Test Pass Rate)
+### 1.2 Tỷ Lệ Vượt Qua Test (Test Pass Rate) [Thực tế]
 
 **Công thức:** Pass Rate = (Test Passed / Test Executed) × 100%
 
 | Metric | Giá Trị |
 |--------|--------|
-| **Test Passed** | 38 |
-| **Test Failed** | 12 |
-| **Test Blocked** | 0 |
-| **Total Executed** | 50 |
-| **Pass Rate** | **76%** ⚠️ |
-| **Fail Rate** | **24%** |
+| **Test Passed** | … **[Thực tế]** |
+| **Test Failed** | … **[Thực tế]** |
+| **Test Blocked** | … **[Thực tế]** |
+| **Total Executed** | … **[Thực tế]** |
+| **Pass Rate** | … **[Thực tế]** |
+| **Fail Rate** | … **[Thực tế]** |
 
 **Biểu Đồ:**
 ```
@@ -56,18 +56,18 @@ Blocked (0): ░░░░░░░░░░░░░░░░░░░░░░�
 
 ---
 
-## 2. CHỈ SỐ PHÁT TRIỂN (Defect Metrics)
+## 2. CHỈ SỐ PHÁT TRIỂN (Defect Metrics) [Thực tế]
 
-### 2.1 Mật Độ Lỗi Theo Module (Defect Density Per Module)
+### 2.1 Mật Độ Lỗi Theo Module (Defect Density Per Module) [Thực tế]
 
 **Công thức:** Defect Density = (Total Defects / Module Test Cases) × 100%
 
 | Module | Test Cases | Defects | Density | Status |
 |--------|-----------|---------|---------|--------|
-| **Authentication** | 15 | 3 | **20%** | ⚠️ |
-| **Product & Cart** | 20 | 5 | **25%** | 🔴 Cao |
-| **Checkout** | 15 | 4 | **27%** | 🔴 Cao |
-| **TỔNG** | **50** | **12** | **24%** | |
+| **Login & Logout** | … **[Thực tế]** | … **[Thực tế]** | … **[Thực tế]** | … |
+| **Inventory & Cart** | … **[Thực tế]** | … **[Thực tế]** | … **[Thực tế]** | … |
+| **Checkout** | … **[Thực tế]** | … **[Thực tế]** | … **[Thực tế]** | … |
+| **TỔNG** | … | … | … | |
 
 **Biểu Đồ Defect Density:**
 ```
@@ -106,7 +106,7 @@ UI/UX            ███████████░░░░░░░░░░
 
 ---
 
-## 3. CHỈ SỐ SEVERITY (Severity Distribution)
+## 3. CHỈ SỐ SEVERITY (Severity Distribution) [Thực tế]
 
 ### 3.1 Phân Bố Mức Độ Nghiêm Trọng
 
@@ -137,7 +137,7 @@ Trivial   ░░░░░░░░░░░░░░░░░░░░░░░�
 
 ---
 
-## 4. CHỈ SỐ COVERAGE REQUIREMENT (Requirement Coverage)
+## 4. CHỈ SỐ COVERAGE REQUIREMENT (Requirement Coverage) [Thực tế]
 
 ### 4.1 Độ Bao Phủ Yêu Cầu
 
@@ -145,15 +145,15 @@ Trivial   ░░░░░░░░░░░░░░░░░░░░░░░�
 
 | Metric | Giá Trị |
 |--------|--------|
-| **Tổng Requirements** | 16 |
-| **Requirements Covered** | 16 |
-| **Requirements Not Covered** | 0 |
-| **Coverage %** | **100%** ✅ |
+| **Tổng Requirements** | … **[Thực tế]** |
+| **Requirements Covered** | … **[Thực tế]** |
+| **Requirements Not Covered** | … **[Thực tế]** |
+| **Coverage %** | … **[Thực tế]** |
 
 **Mục Tiêu:** ≥90%  
 **Kết Quả:** 100% ✅ **VƯỢT QUAMỤC TIÊU**
 
-### 4.2 Phân Bố Test Case Theo Requirement
+### 4.2 Phân Bố Test Case Theo Requirement (PHẦN DEMO)
 
 | Req | Mô Tả | Số TC | Min Yêu Cầu | Status |
 |-----|-------|-------|------------|--------|
@@ -183,7 +183,7 @@ Min Target:    ████████████████████░�
 
 ---
 
-## 5. CHỈ SỐ GHI CHÚ THÊM (Additional Metrics)
+## 5. CHỈ SỐ GHI CHÚ THÊM (Additional Metrics) [Thực tế]
 
 ### 5.1 Tỷ Lệ Test Case Loại (Test Case Type Distribution)
 
@@ -205,13 +205,13 @@ Boundary  ██████░░░░░░░░░░░░░░░░░�
 - **32% Negative cases:** Vượt quá 10 ✅
 - **12% Boundary cases:** Vượt quá 5 ✅
 
-### 5.2 Tỷ Lệ Phát Hiện Bug Theo Giai Đoạn (Bug Detection Rate)
+### 5.2 Tỷ Lệ Phát Hiện Bug Theo Giai Đoạn (Bug Detection Rate) [Thực tế]
 
 | Giai Đoạn | Ngày | Bugs Phát Hiện | Bugs/Ngày |
 |-----------|------|-----------------|-----------|
-| **Tuần 1** | 18-24/01 | 4 | 0.67 |
-| **Tuần 2** | 25-28/01 | 8 | 2.00 |
-| **TỔNG** | 11 ngày | **12 bugs** | **1.09 bugs/ngày** |
+| **Tuần 1** | … **[Thực tế]** | … **[Thực tế]** | … **[Thực tế]** |
+| **Tuần 2** | … **[Thực tế]** | … **[Thực tế]** | … **[Thực tế]** |
+| **TỔNG** | … **[Thực tế]** | … **[Thực tế]** | … **[Thực tế]** |
 
 **Biểu Đồ Phát Hiện:**
 ```
@@ -233,7 +233,7 @@ Tuần 2: ████████████████░░░░░░░�
 
 ---
 
-## 6. BIỂU ĐỒ CHỈ SỐ (Metrics Dashboard)
+## 6. BIỂU ĐỒ CHỈ SỐ (Metrics Dashboard) [Thực tế]
 
 ### 6.1 Tóm Tắt 4 Chỉ Số Chính
 
@@ -348,17 +348,17 @@ Low (8):      ██████████████████░░░░
 
 ---
 
-## 10. KẾT LUẬN CHỈNUMBERING (Conclusion)
+## 10. KẾT LUẬN CHỈNUMBERING (Conclusion) [Thực tế]
 
 ### Kết Quả Tổng Hợp
 
 | Chỉ Số | Kết Quả | Mục Tiêu | Pass/Fail |
 |-------|--------|---------|-----------|
-| **Execution Rate** | 100% | ≥95% | ✅ PASS |
-| **Pass Rate** | 76% | ≥85% | ❌ FAIL |
-| **Coverage** | 100% | ≥90% | ✅ PASS |
-| **Critical Bugs** | 3 | ≈0 | ❌ FAIL |
-| **Major Bugs** | 6 | ≤3 | ❌ FAIL |
+| **Execution Rate** | … **[Thực tế]** | ≥95% | ✅ / ❌ |
+| **Pass Rate** | … **[Thực tế]** | ≥85% | ✅ / ❌ |
+| **Coverage** | … **[Thực tế]** | ≥90% | ✅ / ❌ |
+| **Critical Bugs** | … **[Thực tế]** | ≈0 | ✅ / ❌ |
+| **Major Bugs** | … **[Thực tế]** | ≤3 | ✅ / ❌ |
 
 ### Phán Quyết
 

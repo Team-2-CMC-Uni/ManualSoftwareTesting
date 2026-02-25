@@ -1,13 +1,174 @@
 # CA KIỂM THỬ (TEST CASES)
-## Hệ Thống Web Bán Hàng Online (E-Commerce)
+## Website Swag Labs (Saucedemo.com)
 
-**Tổng số Test Case:** 50  
-**Phân bố:**
-- Authentication (Auth): 15 TC
-- Product & Cart: 20 TC
-- Checkout: 15 TC
+Tài liệu này gồm 2 phần:
+- **Phần A – Swag Labs [Thực tế]**: Các test case áp dụng trực tiếp trên `https://www.saucedemo.com/`
+- **Phần B – Demo E-Commerce**: Bộ test case mẫu cho hệ thống bán hàng online tổng quát (giữ lại để tham khảo kỹ thuật thiết kế)
+
+> Gợi ý: Khi thực hành, ưu tiên dùng **Phần A**.  
+> Các giá trị cụ thể như username/password, sản phẩm, số lượng… bạn tự bổ sung và chỉnh sửa trong file với tag **`[Thực tế]`**.
 
 ---
+
+## PHẦN A – SWAG LABS [Thực tế]
+
+### MODULE SWAG_1: Đăng nhập & Đăng xuất
+
+#### TC_SWAG_AUTH_001: Đăng nhập thành công với tài khoản demo hợp lệ [Thực tế]
+| Trường | Nội dung |
+|--------|---------|
+| **TC_ID** | TC_SWAG_AUTH_001 |
+| **Tiêu đề** | Đăng nhập thành công với username/password demo hợp lệ |
+| **Loại** | Positive |
+| **Priority** | High |
+| **Điều kiện trước** | Người dùng truy cập trang `https://www.saucedemo.com/` |
+| **Các bước thực hiện** | 1. Nhập username demo hợp lệ **[Thực tế]**<br/>2. Nhập password tương ứng **[Thực tế]**<br/>3. Click nút `Login` |
+| **Kết quả mong đợi** | Hệ thống chuyển sang trang Inventory, hiển thị danh sách sản phẩm |
+| **Liên quan đến** | R_SWAG_1 |
+
+#### TC_SWAG_AUTH_002: Đăng nhập thất bại với mật khẩu sai [Thực tế]
+| Trường | Nội dung |
+|--------|---------|
+| **TC_ID** | TC_SWAG_AUTH_002 |
+| **Tiêu đề** | Đăng nhập thất bại khi mật khẩu không chính xác |
+| **Loại** | Negative |
+| **Priority** | High |
+| **Điều kiện trước** | Người dùng ở trang login Swag Labs |
+| **Các bước thực hiện** | 1. Nhập username demo hợp lệ **[Thực tế]**<br/>2. Nhập mật khẩu sai **[Thực tế]**<br/>3. Click `Login` |
+| **Kết quả mong đợi** | Hiển thị thông báo lỗi phía trên form login, người dùng không đăng nhập được |
+| **Liên quan đến** | R_SWAG_1 |
+
+#### TC_SWAG_AUTH_003: Đăng nhập với user bị khoá [Thực tế]
+| Trường | Nội dung |
+|--------|---------|
+| **TC_ID** | TC_SWAG_AUTH_003 |
+| **Tiêu đề** | Hệ thống xử lý đúng khi đăng nhập bằng user bị khoá |
+| **Loại** | Negative |
+| **Priority** | Medium |
+| **Điều kiện trước** | Có sẵn username demo bị khoá **[Thực tế]** |
+| **Các bước thực hiện** | 1. Nhập username bị khoá **[Thực tế]**<br/>2. Nhập password chuẩn **[Thực tế]**<br/>3. Click `Login` |
+| **Kết quả mong đợi** | Hiển thị thông báo user bị khoá, không vào được trang Inventory |
+| **Liên quan đến** | R_SWAG_2 |
+
+#### TC_SWAG_AUTH_004: Đăng xuất thành công [Thực tế]
+| Trường | Nội dung |
+|--------|---------|
+| **TC_ID** | TC_SWAG_AUTH_004 |
+| **Tiêu đề** | Đăng xuất hệ thống qua menu trái |
+| **Loại** | Positive |
+| **Priority** | High |
+| **Điều kiện trước** | Người dùng đã login thành công vào trang Inventory |
+| **Các bước thực hiện** | 1. Click nút menu (3 gạch) ở góc trái trên<br/>2. Chọn `Logout` |
+| **Kết quả mong đợi** | Hệ thống quay lại trang login, session cũ không còn hiệu lực |
+| **Liên quan đến** | R_SWAG_3 |
+
+### MODULE SWAG_2: Danh sách & Chi tiết sản phẩm
+
+#### TC_SWAG_INV_001: Hiển thị đúng danh sách sản phẩm sau khi login [Thực tế]
+| Trường | Nội dung |
+|--------|---------|
+| **TC_ID** | TC_SWAG_INV_001 |
+| **Tiêu đề** | Kiểm tra thông tin cơ bản của danh sách sản phẩm trên trang Inventory |
+| **Loại** | Positive |
+| **Priority** | High |
+| **Điều kiện trước** | Người dùng đã login thành công |
+| **Các bước thực hiện** | 1. Quan sát danh sách sản phẩm trên trang Inventory<br/>2. Kiểm tra tên, giá, mô tả, hình ảnh của một vài sản phẩm đại diện **[Thực tế]** |
+| **Kết quả mong đợi** | Mỗi sản phẩm hiển thị đầy đủ tên, giá, mô tả ngắn, hình ảnh; không bị vỡ layout |
+| **Liên quan đến** | R_SWAG_4 |
+
+#### TC_SWAG_INV_002: Sắp xếp sản phẩm theo Name (A to Z, Z to A) [Thực tế]
+| Trường | Nội dung |
+|--------|---------|
+| **TC_ID** | TC_SWAG_INV_002 |
+| **Tiêu đề** | Kiểm tra chức năng sort theo tên sản phẩm |
+| **Loại** | Positive |
+| **Priority** | Medium |
+| **Điều kiện trước** | Người dùng ở trang Inventory |
+| **Các bước thực hiện** | 1. Chọn sort `Name (A to Z)`<br/>2. Ghi nhận thứ tự một vài sản phẩm **[Thực tế]**<br/>3. Chọn sort `Name (Z to A)`<br/>4. So sánh thứ tự hiển thị |
+| **Kết quả mong đợi** | Danh sách sắp xếp đúng theo alphabet tăng dần/giảm dần |
+| **Liên quan đến** | R_SWAG_5 |
+
+#### TC_SWAG_INV_003: Sắp xếp sản phẩm theo Price (low to high, high to low) [Thực tế]
+| Trường | Nội dung |
+|--------|---------|
+| **TC_ID** | TC_SWAG_INV_003 |
+| **Tiêu đề** | Kiểm tra chức năng sort theo giá sản phẩm |
+| **Loại** | Positive |
+| **Priority** | Medium |
+| **Điều kiện trước** | Người dùng ở trang Inventory |
+| **Các bước thực hiện** | 1. Chọn sort `Price (low to high)`<br/>2. Ghi lại giá của một số sản phẩm đầu danh sách **[Thực tế]**<br/>3. Chọn sort `Price (high to low)`<br/>4. So sánh lại thứ tự giá |
+| **Kết quả mong đợi** | Sản phẩm được sắp xếp đúng theo giá tăng dần/giảm dần |
+| **Liên quan đến** | R_SWAG_5 |
+
+#### TC_SWAG_INV_004: Xem chi tiết một sản phẩm [Thực tế]
+| Trường | Nội dung |
+|--------|---------|
+| **TC_ID** | TC_SWAG_INV_004 |
+| **Tiêu đề** | Mở trang chi tiết sản phẩm từ Inventory |
+| **Loại** | Positive |
+| **Priority** | High |
+| **Điều kiện trước** | Người dùng ở trang Inventory |
+| **Các bước thực hiện** | 1. Click vào tên hoặc hình của một sản phẩm bất kỳ **[Thực tế]**<br/>2. Quan sát trang chi tiết |
+| **Kết quả mong đợi** | Trang chi tiết hiển thị đúng tên, mô tả, giá, nút Add to cart/Remove, nút Back to products |
+| **Liên quan đến** | R_SWAG_6 |
+
+### MODULE SWAG_3: Giỏ hàng & Checkout
+
+#### TC_SWAG_CART_001: Thêm sản phẩm vào giỏ từ trang Inventory [Thực tế]
+| Trường | Nội dung |
+|--------|---------|
+| **TC_ID** | TC_SWAG_CART_001 |
+| **Tiêu đề** | Thêm một sản phẩm vào giỏ và kiểm tra badge giỏ hàng |
+| **Loại** | Positive |
+| **Priority** | High |
+| **Điều kiện trước** | Người dùng ở trang Inventory, giỏ hàng đang trống |
+| **Các bước thực hiện** | 1. Click `Add to cart` của một sản phẩm **[Thực tế]**<br/>2. Quan sát badge số ở icon giỏ hàng |
+| **Kết quả mong đợi** | Badge hiển thị số `1`, nút trên sản phẩm đổi thành `Remove` |
+| **Liên quan đến** | R_SWAG_7 |
+
+#### TC_SWAG_CART_002: Xem chi tiết giỏ hàng [Thực tế]
+| Trường | Nội dung |
+|--------|---------|
+| **TC_ID** | TC_SWAG_CART_002 |
+| **Tiêu đề** | Kiểm tra thông tin sản phẩm trong giỏ |
+| **Loại** | Positive |
+| **Priority** | High |
+| **Điều kiện trước** | Có ít nhất 1 sản phẩm trong giỏ |
+| **Các bước thực hiện** | 1. Click icon giỏ hàng<br/>2. Đối chiếu tên, giá, số lượng sản phẩm trong giỏ với trang Inventory **[Thực tế]** |
+| **Kết quả mong đợi** | Thông tin sản phẩm trong giỏ khớp với sản phẩm đã chọn, tổng tiền item được hiển thị đúng |
+| **Liên quan đến** | R_SWAG_7 |
+
+#### TC_SWAG_CHECKOUT_001: Thực hiện checkout đầy đủ thông tin [Thực tế]
+| Trường | Nội dung |
+|--------|---------|
+| **TC_ID** | TC_SWAG_CHECKOUT_001 |
+| **Tiêu đề** | Checkout thành công với First Name, Last Name, Postal Code hợp lệ |
+| **Loại** | Positive |
+| **Priority** | High |
+| **Điều kiện trước** | Trong giỏ có ít nhất 1 sản phẩm |
+| **Các bước thực hiện** | 1. Từ giỏ hàng click `Checkout`<br/>2. Nhập First Name, Last Name, Postal Code hợp lệ **[Thực tế]**<br/>3. Click `Continue`<br/>4. Kiểm tra trang Overview<br/>5. Click `Finish` |
+| **Kết quả mong đợi** | Hiển thị trang hoàn tất đơn hàng (THANK YOU), có nút `Back Home` |
+| **Liên quan đến** | R_SWAG_8 |
+
+#### TC_SWAG_CHECKOUT_002: Bắt buộc nhập thông tin ở bước checkout [Thực tế]
+| Trường | Nội dung |
+|--------|---------|
+| **TC_ID** | TC_SWAG_CHECKOUT_002 |
+| **Tiêu đề** | Kiểm tra validation khi để trống các trường checkout |
+| **Loại** | Negative |
+| **Priority** | High |
+| **Điều kiện trước** | Người dùng ở bước nhập thông tin checkout |
+| **Các bước thực hiện** | 1. Để trống First Name và click `Continue`<br/>2. Lặp lại cho Last Name và Postal Code **[Thực tế]** |
+| **Kết quả mong đợi** | Hệ thống hiển thị thông báo lỗi tương ứng từng trường, không cho qua bước Overview |
+| **Liên quan đến** | R_SWAG_8 |
+
+---
+
+## PHẦN B – HỆ THỐNG WEB BÁN HÀNG ONLINE (DEMO)
+
+> Phần này giữ nguyên các test case demo cho một hệ thống e-commerce tổng quát  
+> (có đăng ký, tìm kiếm, lọc, mã giảm giá, email…).  
+> Khi test Swag Labs, bạn **không cần dùng các test case không tồn tại trên trang thực tế**.
 
 ## MODULE 1: AUTHENTICATION (15 Test Cases)
 

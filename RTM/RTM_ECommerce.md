@@ -1,12 +1,34 @@
 # MA TRẬN TRUY VẾT YÊU CẦU (RTM)
-## Hệ Thống Web Bán Hàng Online (E-Commerce)
+## Website Swag Labs (Saucedemo.com) + Demo E-Commerce
 
 **Ngày tạo:** 28/01/2026  
-**Phiên bản:** 1.0
+**Phiên bản:** 1.0 (điều chỉnh cho Swag Labs)
 
 ---
 
-## 1. BẢNG RTM CHI TIẾT
+## 1. PHẦN A – RTM CHO SWAG LABS [Thực tế]
+
+Phần này bạn sẽ **tự hoàn thiện** dựa trên luồng thực tế của `https://www.saucedemo.com/`.  
+Gợi ý một số yêu cầu chính (Req ID bắt đầu bằng `R_SWAG_`):
+
+| Req ID | Mô Tả Yêu Cầu | Test Case ID | Loại | Trạng Thái |
+|--------|---------------|--------------|------|-----------|
+| **R_SWAG_1** | Người dùng đăng nhập thành công với tài khoản demo hợp lệ | TC_SWAG_AUTH_001 **[Thực tế]** | Positive | To be covered |
+| **R_SWAG_2** | Hệ thống chặn đăng nhập với user bị khoá | TC_SWAG_AUTH_003 **[Thực tế]** | Negative | To be covered |
+| **R_SWAG_3** | Người dùng có thể đăng xuất an toàn qua menu | TC_SWAG_AUTH_004 **[Thực tế]** | Positive | To be covered |
+| **R_SWAG_4** | Trang Inventory hiển thị đúng danh sách sản phẩm | TC_SWAG_INV_001 **[Thực tế]** | Positive | To be covered |
+| **R_SWAG_5** | Chức năng sort theo tên/giá hoạt động đúng | TC_SWAG_INV_002<br/>TC_SWAG_INV_003 **[Thực tế]** | Positive | To be covered |
+| **R_SWAG_6** | Người dùng xem được chi tiết sản phẩm | TC_SWAG_INV_004 **[Thực tế]** | Positive | To be covered |
+| **R_SWAG_7** | Người dùng thêm/xoá sản phẩm trong giỏ và xem giỏ hàng | TC_SWAG_CART_001<br/>TC_SWAG_CART_002 **[Thực tế]** | Positive | To be covered |
+| **R_SWAG_8** | Quy trình checkout (bắt buộc nhập thông tin, overview, hoàn tất) hoạt động đúng | TC_SWAG_CHECKOUT_001<br/>TC_SWAG_CHECKOUT_002 **[Thực tế]** | Positive<br/>Negative | To be covered |
+
+> Khi thực hành, bạn hãy:
+> - Cập nhật cột **Test Case ID** khi thêm/xoá test case trong `Test_Cases_ECommerce.md`  
+> - Cập nhật cột **Trạng Thái** (Covered/Not Covered) sau khi hoàn thiện test case **[Thực tế]**
+
+---
+
+## 2. PHẦN B – BẢNG RTM DEMO CHO HỆ THỐNG E-COMMERCE (GIỮ NGUYÊN LÀM MẪU)
 
 | Req ID | Mô Tả Yêu Cầu | Test Case ID | Loại | Trạng Thái |
 |--------|---------------|--------------|------|-----------|
@@ -29,7 +51,7 @@
 
 ---
 
-## 2. TÓMLƯỢC COVERAGE
+## 3. TÓM LƯỢC COVERAGE (PHẦN DEMO)
 
 | Số Thứ Tự | Yêu Cầu | Số TC Áp Dụng | Trạng Thái |
 |-----------|--------|--------------|-----------|
@@ -53,7 +75,7 @@
 
 ---
 
-## 3. PHÂN TÍCH CHI TIẾT
+## 4. PHÂN TÍCH CHI TIẾT (PHẦN DEMO)
 
 ### 3.1 Yêu Cầu Được Bao Phủ (Coverage Rate)
 
@@ -82,7 +104,7 @@
 
 ---
 
-## 4. CHỈ SỐ CHẤT LƯỢNG RTM
+## 5. CHỈ SỐ CHẤT LƯỢNG RTM (PHẦN DEMO)
 
 | Chỉ Số | Giá Trị | Tiêu Chí | Kết Quả |
 |-------|--------|---------|---------|
@@ -93,7 +115,7 @@
 
 ---
 
-## 5. GIAO CẢNH RỦI RO KHÔNG ĐƯỢC BỌC
+## 6. GIAO CẢNH RỦI RO KHÔNG ĐƯỢC BỌC (PHẦN DEMO)
 
 **Không có yêu cầu nào bị bỏ sót.**
 
@@ -101,7 +123,7 @@ Tất cả 16 yêu cầu đều có đủ test case bao phủ cả positive, neg
 
 ---
 
-## 6. KẾ HOẠCH ĐIỀU CHỈNH RTM
+## 7. KẾ HOẠCH ĐIỀU CHỈNH RTM
 
 ### 6.1 Quy Trình Cập Nhật
 
