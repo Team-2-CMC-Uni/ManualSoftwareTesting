@@ -225,11 +225,11 @@
 
 ## MODULE 3: CHECKOUT (15 Test Cases)
 
-### TC_CHECKOUT_001: Thanh toán thành công (COD)
+### TC_CHECKOUT_001: Thanh toán thành công
 | Trường | Nội dung |
 |--------|---------|
 | **TC_ID** | TC_CHECKOUT_001 |
-| **Tiêu đề** | Đặt hàng thành công với phương thức COD |
+| **Tiêu đề** | Đặt hàng thành công với phương thức |
 | **Loại** | Positive |
 | **Priority** | High |
 | **Điều kiện trước** | Giỏ hàng có sản phẩm, người dùng đã đăng nhập |
@@ -257,7 +257,7 @@
 | **Loại** | Boundary |
 | **Priority** | Medium |
 | **Điều kiện trước** | Ở trang thanh toán |
-| **Các bước thực hiện** | 1. Nhập Zip/Postal Code: "10000" (5 ký tự)<br/>2. Ấn "Continue" |
+| **Các bước thực hiện** | 1. Nhập Zip/Postal Code: "50000" (5 ký tự)<br/>2. Ấn "Continue" |
 | **Kết quả mong đợi** | Địa chỉ được chấp nhận |
 | **Liên quan đến** | R13 |
 
@@ -281,10 +281,10 @@
 
 | Module | Tổng TC | Positive | Negative | Boundary |
 |--------|---------|----------|----------|----------|
-| Authentication | 12 | 10 | 2 | 0 |
-| Product & Cart | 5 | 5 | 0 | 0 |
-| Checkout | 4 | 2 | 1 | 1 |
-| **TỔNG CỘNG** | **21** | **17** | **3** | **1** |
+| Authentication | 4 | 2 | 2 | 0 |
+| Product & Cart | 11 | 11 | 0 | 0 |
+| Checkout | 6 | 3 | 2 | 1 |
+| **TỔNG CỘNG** | **21** | **16** | **4** | **1** |
 
 
 ---

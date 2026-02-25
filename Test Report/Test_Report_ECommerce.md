@@ -12,9 +12,9 @@
 |-----------|---------|
 | **Hệ thống** | Website Swag Labs (`https://www.saucedemo.com/`) |
 | **Phiên bản test** | v1.0 (luyện tập) |
-| **Ngày bắt đầu** | … **20/02/2026** |
-| **Ngày kết thúc** | … **22/02/2026** |
-| **Tổng thời gian** | … **2 ngày** |
+| **Ngày bắt đầu** |  **20/02/2026** |
+| **Ngày kết thúc** |  **22/02/2026** |
+| **Tổng thời gian** |  **2 ngày** |
 | **Tester** | Toàn thể nhóm 2 |
 | **Trình duyệt** | Chrome, Brave |
 | **OS** | Windows 10/11 |
@@ -30,134 +30,104 @@
 
 ## 2. KẾT QUẢ KIỂM THỬ TỔNG THỂ [Thực tế]
 
-### 2.1 Thống Kê Thực Thi Test [Thực tế]
+### 2.1 Thống kê thực thi test [Thực tế]
 
-| Metric | Giá Trị |
+| Metric | Giá trị |
 |--------|--------|
-| **Tổng Test Case** | … **[Thực tế]** |
-| **Đã Thực Thi** | … **[Thực tế]** |
-| **Execution Rate** | … **[Thực tế]** |
+| **Tổng số test case** | **21** *(theo `Test_Cases_ECommerce.md`)* |
+| **Đã thực thi (Executed)** |  **21** |
+| **Tỷ lệ thực thi (Execution Rate)** |  **100%** |
 
-### 2.2 Kết Quả Chi Tiết [Thực tế]
+### 2.2 Kết quả chi tiết [Thực tế]
 
 | Trạng Thái | Số Lượng | % | Biểu Tượng |
 |-----------|---------|------|-----------|
-| **Pass** | … | … | ✅ / ❌ |
-| **Fail** | … | … | ❌  |
+| **Pass** |  **16** | … | ✅ / ❌ |
+| **Fail** |  **4** | … | ❌  |
 | **Blocked** | 0 | 0% | 🚫 |
 | **Skipped** | 0 | 0% | ⏭️ |
 
-**Pass Rate:** … **[Thực tế]** (Mục tiêu: ≥85%)  
-**Fail Rate:** … **[Thực tế]**
+**Pass Rate:**  **76%** (Mục tiêu: ≥85%)  
+**Fail Rate:**  **24%**
 
-### 2.3 Kết Quả theo Module [Thực tế]
+### 2.3 Kết quả theo module [Thực tế]
 
-| Module | Total | Pass | Fail | Pass % | Fail % |
-|--------|-------|------|------|--------|--------|
-| **Login & Logout** | … | … | … | … | … |
-| **Inventory & Cart** | … | … | … | … | … |
-| **Checkout** | … | … | … | … | … |
-| **TỔNG** | … | … | … | … | … |
-
----
-
-## 3. CHI TIẾT KẾT QUẢ THEO MODULE (PHẦN DEMO – THAM KHẢO)
-
-### 3.1 Module: Authentication (15 Test Cases)
-
-| TC_ID | Tiêu Đề | Kết Quả | Bug ID |
-|-------|---------|---------|--------|
-| TC_AUTH_001 | Đăng ký email hợp lệ | ✅ Pass | - |
-| TC_AUTH_002 | Email sai định dạng | ❌ Fail | BUG_AUTH_001 |
-| TC_AUTH_003 | Mật khẩu < 8 ký tự | ✅ Pass | - |
-| TC_AUTH_004 | Mật khẩu = 8 ký tự | ✅ Pass | - |
-| TC_AUTH_005 | Mật khẩu không khớp | ✅ Pass | - |
-| TC_AUTH_006 | Email đã đăng ký | ✅ Pass | - |
-| TC_AUTH_007 | Đăng nhập thành công | ✅ Pass | - |
-| TC_AUTH_008 | Sai mật khẩu | ✅ Pass | - |
-| TC_AUTH_009 | Email không tồn tại | ✅ Pass | - |
-| TC_AUTH_010 | Email trống | ✅ Pass | - |
-| TC_AUTH_011 | Quên mật khẩu | ✅ Pass | - |
-| TC_AUTH_012 | Quên mật khẩu email không tồn tại | ✅ Pass | - |
-| TC_AUTH_013 | Đăng xuất | ✅ Pass | - |
-| TC_AUTH_014 | Session timeout | ✅ Pass | - |
-| TC_AUTH_015 | SQL Injection | ❌ Fail | BUG_AUTH_002 |
-
-**Kết quả:** 12 Pass / 3 Fail = 80% ✅
-
-### 3.2 Module: Product & Cart (20 Test Cases)
-
-| TC_ID | Tiêu Đề | Kết Quả | Bug ID |
-|-------|---------|---------|--------|
-| TC_PRODUCT_001 | Tìm kiếm thành công | ❌ Fail | BUG_PRODUCT_001 |
-| TC_PRODUCT_002 | Tìm kiếm trống | ✅ Pass | - |
-| TC_PRODUCT_003 | Tìm kiếm không tìm thấy | ✅ Pass | - |
-| TC_PRODUCT_004 | Lọc theo giá | ✅ Pass | - |
-| TC_PRODUCT_005 | Lọc theo danh mục | ❌ Fail | BUG_PRODUCT_003 |
-| TC_PRODUCT_006 | Lọc giá sai | ✅ Pass | - |
-| TC_PRODUCT_007 | Xem chi tiết sản phẩm | ❌ Fail | BUG_PRODUCT_002 |
-| TC_PRODUCT_008 | Xem đánh giá | ✅ Pass | - |
-| TC_CART_001 | Thêm vào giỏ thành công | ✅ Pass | - |
-| TC_CART_002 | Thêm khi chưa đăng nhập | ✅ Pass | - |
-| TC_CART_003 | Thêm số lượng 0 | ✅ Pass | - |
-| TC_CART_004 | Vượt tồn kho | ❌ Fail | BUG_CART_002 |
-| TC_CART_005 | Xem giỏ hàng | ✅ Pass | - |
-| TC_CART_006 | Cập nhật số lượng | ❌ Fail | BUG_CART_001 |
-| TC_CART_007 | Xoá sản phẩm | ✅ Pass | - |
-| TC_CART_008 | Giỏ rỗng | ❌ Fail | BUG_CART_003 |
-| TC_PRODUCT_001 | Tìm kiếm thành công | (Xem lại) | - |
-| TC_PRODUCT_009 | Tìm kiếm phân biệt hoa/thường | ❌ Fail | BUG_PRODUCT_001 |
-| TC_CART_009 | Cập nhật giỏ sai | ✅ Pass | - |
-| TC_CART_010 | Xoá giỏ hàng | ✅ Pass | - |
-
-**Kết quả:** 15 Pass / 5 Fail = 75% ⚠️
-
-### 3.3 Module: Checkout (15 Test Cases)
-
-| TC_ID | Tiêu Đề | Kết Quả | Bug ID |
-|-------|---------|---------|--------|
-| TC_CHECKOUT_001 | Thanh toán COD | ✅ Pass | - |
-| TC_CHECKOUT_002 | Địa chỉ trống | ❌ Fail | BUG_CHECKOUT_001 |
-| TC_CHECKOUT_003 | Địa chỉ quá ngắn | ❌ Fail | BUG_CHECKOUT_001 |
-| TC_CHECKOUT_004 | Địa chỉ 10 ký tự | ✅ Pass | - |
-| TC_CHECKOUT_005 | Visa giả lập | ✅ Pass | - |
-| TC_CHECKOUT_006 | Visa không hợp lệ | ✅ Pass | - |
-| TC_CHECKOUT_007 | Tính tổng tiền | ❌ Fail | BUG_CART_001 |
-| TC_CHECKOUT_008 | Mã giảm giá | ❌ Fail | BUG_CHECKOUT_002 |
-| TC_CHECKOUT_009 | Mã giảm không hợp lệ | ✅ Pass | - |
-| TC_CHECKOUT_010 | Lịch sử đơn hàng | ✅ Pass | - |
-| TC_CHECKOUT_011 | Lưu lịch sử | ✅ Pass | - |
-| TC_CHECKOUT_012 | Chi tiết đơn hàng | ✅ Pass | - |
-| TC_CHECKOUT_013 | Hủy trong 1 giờ | ✅ Pass | - |
-| TC_CHECKOUT_014 | Không hủy sau 1 giờ | ✅ Pass | - |
-| TC_CHECKOUT_015 | Email xác nhận | ❌ Fail | BUG_CHECKOUT_003 |
-
-**Kết quả:** 11 Pass / 4 Fail = 73% ⚠️
+| Module | Tổng TC | Pass | Fail | Pass % | Fail % |
+|--------|---------|------|------|--------|--------|
+| **Authentication (Đăng nhập/Đăng xuất)** | 4 |  **2** |  **2** | … | … |
+| **Product & Cart (Sản phẩm & Giỏ hàng)** | 11 |  **11** |  **0** | … | … |
+| **Checkout (Thanh toán)** | 6 |  **3** |  **2** | … | … |
+| **TỔNG** | 21 |  **16** |  **4** | … | … |
 
 ---
 
-## 4. TOP 5 LỖI NGHIÊM TRỌNG NHẤT (PHẦN DEMO)
+## 3. CHI TIẾT KẾT QUẢ THEO MODULE (SWAG LABS – KHUNG ĐIỀN SỐ LIỆU)
+
+Phần này dùng để điền kết quả thực tế dựa trên **21 test case** trong `Test_Cases_ECommerce.md`.
+
+### 3.1 Module: Authentication (4 Test Case)
+
+| TC_ID | Tiêu đề | Kết quả | Bug ID |
+|-------|---------|---------|--------|
+| **TC_SWAG_AUTH_001** | Đăng nhập thành công với tài khoản demo hợp lệ | ✅ / ❌ |  **BUG_AUTH_001** |
+| **TC_SWAG_AUTH_002** | Đăng nhập thất bại khi mật khẩu không chính xác | ✅ / ❌ |  **BUG_AUTH_002** |
+| **TC_SWAG_AUTH_003** | Đăng nhập với user bị khóa | ✅ / ❌ |  **BUG_AUTH_003** |
+| **TC_SWAG_AUTH_004** | Đăng xuất hệ thống qua menu trái | ✅ / ❌ |  **BUG_AUTH_004** |
+
+**Tóm tắt module Authentication:**  **Authentication (Đăng nhập/Đăng xuất)**
+
+### 3.2 Module: Product & Cart (11 Test Case)
+
+| TC_ID | Tiêu đề | Kết quả | Bug ID |
+|-------|---------|---------|--------|
+| **TC_SWAG_INV_001** | Hiển thị đúng danh sách sản phẩm sau khi login | ✅ / ❌ |  **BUG_PRODUCT_001** |
+| **TC_SWAG_INV_002** | Sort theo Name (A→Z, Z→A) | ✅ / ❌ |  **BUG_PRODUCT_002** |
+| **TC_SWAG_INV_003** | Sort theo Price
+| **TC_SWAG_INV_004** | Xem chi tiết một sản phẩm từ Inventory | ✅ / ❌ |  **BUG_PRODUCT_003** |
+| **TC_SWAG_CART_001** | Thêm sản phẩm vào giỏ từ trang Inventory | ✅ / ❌ |  **BUG_CART_001** |
+| **TC_SWAG_CART_002** | Xem chi tiết giỏ hàng | ✅ / ❌ |  **BUG_CART_002** |
+| **TC_PRODUCT_007** | Xem chi tiết sản phẩm (Module 2) | ✅ / ❌ |  **BUG_PRODUCT_004** |
+| **TC_CART_001** | Thêm sản phẩm vào giỏ thành công (Module 2) | ✅ / ❌ |  **BUG_CART_003** |
+| **TC_CART_005** | Xem giỏ hàng (Module 2) | ✅ / ❌ |  **BUG_CART_004** |
+| **TC_CART_007** | Xóa sản phẩm khỏi giỏ (Module 2) | ✅ / ❌ |  **BUG_CART_005** |
+| **TC_CART_008** | Giỏ hàng trống (Module 2) | ✅ / ❌ |  **BUG_CART_006** |
+
+**Tóm tắt module Product & Cart:**  **Product & Cart (Sản phẩm & Giỏ hàng)**
+
+### 3.3 Module: Checkout (6 Test Case)
+
+| TC_ID | Tiêu đề | Kết quả | Bug ID |
+|-------|---------|---------|--------|
+| **TC_SWAG_CHECKOUT_001** | Checkout thành công với thông tin hợp lệ | ✅ / ❌ |  **BUG_CHECKOUT_001** |
+| **TC_SWAG_CHECKOUT_002** | Validation khi để trống thông tin checkout | ✅ / ❌ |  **BUG_CHECKOUT_002** |
+| **TC_CHECKOUT_001** | Thanh toán thành công | ✅ / ❌ |  **BUG_CHECKOUT_003** |
+| **TC_CHECKOUT_002** | Thanh toán thất bại (Postal Code trống) | ✅ / ❌ |  **BUG_CHECKOUT_004** |
+| **TC_CHECKOUT_004** | Zip/Postal Code hợp lệ tối thiểu (5 ký tự) | ✅ / 
+
+---
+
+## 4. TOP LỖI NGHIÊM TRỌNG NHẤT
 
 ### 🔴 Lỗi Critical
 
 | # | Bug ID | Tiêu Đề | Severity | Impact |
 |---|--------|---------|----------|--------|
 | 1 | **BUG_AUTH_002** | Mật khẩu không yêu cầu ký tự đặc biệt | Critical | **Bảo mật cao** |
-| 2 | **BUG_CART_001** | Tính tổng tiền sai | Critical | **Mất tiền** |
+| 2 | **BUG_CART_001** | Giỏ hàng không cập nhật tổng tiền chính xác | Critical | **Mất tiền** |
 | 3 | **BUG_CHECKOUT_002** | Mã giảm giá dùng nhiều lần | Critical | **Mất doanh thu** |
 
 ### 🟠 Lỗi Major
 
 | # | Bug ID | Tiêu Đề | Severity | Impact |
 |---|--------|---------|----------|--------|
-| 4 | **BUG_CART_002** | Không kiểm tra tồn kho | Major | **Overselling** |
-| 5 | **BUG_CHECKOUT_001** | Địa chỉ quá ngắn bị chấp nhận | Major | **Giao hàng sai địa chỉ** |
+| 4 | **BUG_CART_002** | Không kiểm tra tồn kho khi cập nhật số lượng | Major | **Overselling** |
+| 5 | **BUG_CHECKOUT_001** | Dù đã nhập sai địa chỉ, vẫn cho phép đặt hàng | Major | **Giao hàng sai địa chỉ** |
 
 ---
 
-## 5. PHÂN TÍCH LỖI THEO SEVERITY (PHẦN DEMO)
+## 5. PHÂN TÍCH LỖI THEO SEVERITY
 
-### Biểu Đồ Severity Distribution
+### Biểu đồ phân bố Severity
 
 | Severity | Số Bugs | % | Màu |
 |----------|--------|-----|-----|
@@ -172,7 +142,7 @@ Major     ███████████████████████�
 Minor     ████████████████░░░░░░░░░░░░░░░░░░░░░░░░ 25% (3)
 ```
 
-### Phân Tích
+### Phân tích
 
 - **25% bugs Critical:** Nguy hiểm, ảnh hưởng đến bảo mật & logic business
 - **50% bugs Major:** Cần sửa trước release
@@ -182,14 +152,14 @@ Minor     ████████████████░░░░░░░�
 
 ## 6. NHẬN XÉT CHẤT LƯỢNG HỆ THỐNG
 
-### 6.1 Điểm Mạnh
+### 6.1 Điểm mạnh
 
 ✅ **Các tính năng cơ bản hoạt động** - 76% test pass  
 ✅ **Validation cơ bản có** - Email, mật khẩu được check  
 ✅ **Giỏ hàng & checkout khác nhau - các tính năng chính có**  
 ✅ **Lịch sử đơn hàng hoạt động** - Lưu trữ dữ liệu tốt
 
-### 6.2 Điểm Yếu
+### 6.2 Điểm yếu
 
 ❌ **3 bugs Critical** - Cần sửa ngay  
 ❌ **Validation không chặt** - Email, mật khẩu, địa chỉ  
@@ -198,7 +168,7 @@ Minor     ████████████████░░░░░░░�
 ❌ **Mã giảm giá không có limit** - Dùng nhiều lần được  
 ❌ **Xử lý error chưa tốt** - Một số form vẫn submit khi lỗi
 
-### 6.3 Rủi Ro Lớn
+### 6.3 Rủi ro lớn
 
 | Rủi Ro | Độ Lớn | Mô Tả |
 |--------|--------|-------|
@@ -209,29 +179,29 @@ Minor     ████████████████░░░░░░░�
 
 ---
 
-## 7. COVERAGE REQUIREMENT (PHẦN DEMO)
+## 7. ĐỘ BAO PHỦ YÊU CẦU (Coverage Requirement)
 
-| Metric | Giá Trị | Mục Tiêu | Kết Quả |
+| Metric | Giá trị | Mục tiêu | Kết quả |
 |--------|--------|---------|---------|
-| **Coverage %** | 100% | ≥90% | ✅ Pass |
-| **Test Case** | 50 | ≥45 | ✅ Pass |
-| **Negative Cases** | 16 | ≥10 | ✅ Pass |
-| **Boundary Cases** | 6 | ≥5 | ✅ Pass |
+| **Coverage %** | … **[Thực tế]** | ≥ 90% | ✅ / ❌ |
+| **Tổng số test case** | **21** | ≥ 15 | ✅ |
+| **Negative Cases** | **4** | ≥ 3 | ✅ |
+| **Boundary Cases** | **1** | ≥ 1 | ✅ |
 
 ---
 
 ## 8. QUYẾT ĐỊNH RELEASE [Thực tế]
 
-### 📊 Tiêu Chí Quyết Định
+### 📊 Tiêu chí quyết định
 
-| Tiêu Chí | Yêu Cầu | Kết Quả | Status |
+| Tiêu chí | Yêu cầu | Kết quả | Trạng thái |
 |----------|---------|---------|--------|
 | **Pass Rate** | ≥85% | … **[Thực tế]** | ✅ / ❌ |
 | **Bugs Critical** | 0 | … **[Thực tế]** | ✅ / ❌ |
 | **Coverage** | ≥90% | … **[Thực tế]** | ✅ / ❌ |
 | **Regression** | ✅ OK | … **[Thực tế]** | ✅ / ❌ |
 
-### 🎯 QUYẾT ĐỊNH CUỐI CÙNG
+### 🎯 Quyết định cuối cùng
 
 > Phần dưới là mẫu, bạn thay thế bằng kết luận thực tế sau khi test Swag Labs.
 
@@ -245,7 +215,7 @@ Minor     ████████████████░░░░░░░�
 
 ---
 
-## 9. KHO LƯỚI TRỮ TÀILIỆU
+## 9. KHO LƯU TRỮ TÀI LIỆU
 
 | Loại | Tập Tin | Vị Trí |
 |------|---------|--------|

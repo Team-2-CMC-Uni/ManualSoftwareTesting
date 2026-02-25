@@ -30,75 +30,68 @@ Gợi ý một số yêu cầu chính (Req ID bắt đầu bằng `R_SWAG_`):
 
 ---
 
-## 3. TÓM LƯỢC COVERAGE (PHẦN DEMO)
+## 3. TÓM LƯỢC ĐỘ BAO PHỦ YÊU CẦU (SWAG LABS)
 
-| Số Thứ Tự | Yêu Cầu | Số TC Áp Dụng | Trạng Thái |
-|-----------|--------|--------------|-----------|
-| 1 | R1 | 2 | ✅ Covered |
-| 2 | R2 | 2 | ✅ Covered |
-| 3 | R3 | 3 | ✅ Covered |
-| 4 | R4 | 3 | ✅ Covered |
-| 5 | R5 | 2 | ✅ Covered |
-| 6 | R6 | 2 | ✅ Covered |
-| 7 | R7 | 3 | ✅ Covered |
-| 8 | R8 | 3 | ✅ Covered |
-| 9 | R9 | 2 | ✅ Covered |
-| 10 | R10 | 4 | ✅ Covered |
-| 11 | R11 | 2 | ✅ Covered |
-| 12 | R12 | 2 | ✅ Covered |
-| 13 | R13 | 3 | ✅ Covered |
-| 14 | R14 | 3 | ✅ Covered |
-| 15 | R15 | 5 | ✅ Covered |
-| 16 | R16 | 5 | ✅ Covered |
-| **TỔNG** | **16 Yêu Cầu** | **42 Mapping** | **100% Coverage** |
+| STT | Req ID | Số Test Case Áp Dụng | Trạng Thái |
+|-----|--------|----------------------|-----------|
+| 1 | R_SWAG_1 | 2 | ✅ Được bao phủ |
+| 2 | R_SWAG_2 | 1 | ✅ Được bao phủ |
+| 3 | R_SWAG_3 | 1 | ✅ Được bao phủ |
+| 4 | R_SWAG_4 | 1 | ✅ Được bao phủ |
+| 5 | R_SWAG_5 | 2 | ✅ Được bao phủ |
+| 6 | R_SWAG_6 | 1 | ✅ Được bao phủ |
+| 7 | R_SWAG_7 | 2 | ✅ Được bao phủ |
+| 8 | R_SWAG_8 | 2 | ✅ Được bao phủ |
+| **TỔNG** | **8 yêu cầu** | **12 mapping (tối thiểu)** | **100% độ bao phủ yêu cầu chính** |
 
 ---
 
-## 4. PHÂN TÍCH CHI TIẾT (PHẦN DEMO)
+## 4. PHÂN TÍCH CHI TIẾT ĐỘ BAO PHỦ
 
-### 3.1 Yêu Cầu Được Bao Phủ (Coverage Rate)
+### 4.1 Độ bao phủ yêu cầu (Requirement Coverage)
 
-- **Tổng số yêu cầu:** 16
-- **Yêu cầu được bao phủ:** 16
-- **Yêu cầu không được bao phủ:** 0
-- **Coverage %:** **100%** ✅ (Vượt quá mục tiêu 90%)
+- **Tổng số yêu cầu:** 8 (R_SWAG_1 → R_SWAG_8)
+- **Yêu cầu được ít nhất 1 test case bao phủ:** 8
+- **Yêu cầu chưa được bao phủ:** 0
+- **Độ bao phủ yêu cầu (Coverage %):** **100%** ✅ (vượt mục tiêu 90%)
 
-### 3.2 Phân Bố Test Case Theo Yêu Cầu
+### 4.2 Phân bố test case theo yêu cầu
 
-- **Yêu cầu có 2 TC:** R1, R2, R5, R6, R9, R11, R12 (7 yêu cầu)
-- **Yêu cầu có 3 TC:** R4, R7, R8, R13, R14 (5 yêu cầu)
-- **Yêu cầu có 4 TC:** R10 (1 yêu cầu)
-- **Yêu cầu có 5 TC:** R15, R16 (2 yêu cầu)
+- **Yêu cầu có 2 test case:** R_SWAG_1, R_SWAG_5, R_SWAG_7, R_SWAG_8
+- **Yêu cầu có 1 test case:** R_SWAG_2, R_SWAG_3, R_SWAG_4, R_SWAG_6
 
-**Kết luận:** Mỗi yêu cầu được áp dụng bởi tối thiểu 2 test case ✅
+**Kết luận:** Các yêu cầu quan trọng (đăng nhập, sort, giỏ hàng, checkout) đều có từ **2 test case trở lên**, các yêu cầu còn lại tối thiểu 1 test case.
 
-### 3.3 Loại Test Case Phân Bố Theo Module
+### 4.3 Phân bố loại test case theo module (dựa trên 21 test case hiện tại)
 
-| Module | Positive | Negative | Boundary | Total |
-|--------|----------|----------|----------|-------|
-| Authentication | 6 | 7 | 2 | 15 |
-| Product & Cart | 13 | 5 | 2 | 20 |
-| Checkout | 9 | 4 | 2 | 15 |
-| **TỔNG** | **28** | **16** | **6** | **50** |
+| Module | Positive | Negative | Boundary | Tổng |
+|--------|----------|----------|----------|------|
+| Authentication | 2 | 2 | 0 | 4 |
+| Product & Cart | 11 | 0 | 0 | 11 |
+| Checkout | 3 | 2 | 1 | 6 |
+| **TỔNG** | **16** | **4** | **1** | **21** |
 
 ---
 
-## 5. CHỈ SỐ CHẤT LƯỢNG RTM (PHẦN DEMO)
+## 5. CHỈ SỐ CHẤT LƯỢNG RTM (SWAG LABS)
 
-| Chỉ Số | Giá Trị | Tiêu Chí | Kết Quả |
-|-------|--------|---------|---------|
-| Coverage % | 100% | ≥ 90% | ✅ Pass |
-| Traceability | 50 TC → 16 Req | Toàn bộ Req | ✅ Pass |
-| Độ bao phủ tối thiểu | 2 TC/Req | ≥ 2 TC/Req | ✅ Pass |
-| Số Test Case | 50 | ≥ 45 | ✅ Pass |
+| Chỉ số | Giá trị | Tiêu chí | Kết quả |
+|--------|---------|---------|---------|
+| Độ bao phủ yêu cầu | 100% | ≥ 90% | ✅ Đạt |
+| Traceability | 21 TC → 8 Req | Tất cả yêu cầu chính | ✅ Đạt |
+| Độ bao phủ tối thiểu | ≥ 1 TC/Req (yêu cầu chính) | Không bỏ sót yêu cầu | ✅ Đạt |
+| Số test case hiện tại | 21 | Tối thiểu 15 | ✅ Đạt |
 
 ---
 
-## 6. GIAO CẢNH RỦI RO KHÔNG ĐƯỢC BỌC (PHẦN DEMO)
+## 6. ĐÁNH GIÁ RỦI RO CHƯA ĐƯỢC BAO PHỦ
 
-**Không có yêu cầu nào bị bỏ sót.**
+**Hiện tại không có yêu cầu chức năng chính nào bị bỏ sót trong RTM.**
 
-Tất cả 16 yêu cầu đều có đủ test case bao phủ cả positive, negative, và boundary case.
+Tất cả 8 yêu cầu (R_SWAG_1 → R_SWAG_8) đều đã có test case tương ứng bao phủ các luồng:
+- Trường hợp đúng (positive) cho tất cả yêu cầu
+- Trường hợp sai (negative) cho các luồng quan trọng (đăng nhập, checkout)
+- Trường hợp biên (boundary) cho Zip/Postal Code tại bước checkout
 
 ---
 
