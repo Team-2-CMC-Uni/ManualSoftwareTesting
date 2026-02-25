@@ -1,5 +1,5 @@
 # MA TRẬN TRUY VẾT YÊU CẦU (RTM)
-## Website Swag Labs (Saucedemo.com) + Demo E-Commerce
+## Website Swag Labs (Saucedemo.com)
 
 **Ngày tạo:** 28/01/2026  
 **Phiên bản:** 1.0 (điều chỉnh cho Swag Labs)
@@ -26,28 +26,7 @@ Gợi ý một số yêu cầu chính (Req ID bắt đầu bằng `R_SWAG_`):
 > - Cập nhật cột **Test Case ID** khi thêm/xoá test case trong `Test_Cases_ECommerce.md`  
 > - Cập nhật cột **Trạng Thái** (Covered/Not Covered) sau khi hoàn thiện test case **[Thực tế]**
 
----
 
-## 2. PHẦN B – BẢNG RTM DEMO CHO HỆ THỐNG E-COMMERCE (GIỮ NGUYÊN LÀM MẪU)
-
-| Req ID | Mô Tả Yêu Cầu | Test Case ID | Loại | Trạng Thái |
-|--------|---------------|--------------|------|-----------|
-| **R1** | Người dùng đăng ký bằng email hợp lệ | TC_AUTH_001<br/>TC_AUTH_006 | Positive<br/>Negative | Covered |
-| **R2** | Không cho đăng ký khi email sai định dạng | TC_AUTH_002<br/>TC_AUTH_004 | Negative<br/>Boundary | Covered |
-| **R3** | Mật khẩu tối thiểu 8 ký tự | TC_AUTH_003<br/>TC_AUTH_004<br/>TC_AUTH_005 | Boundary<br/>Boundary<br/>Negative | Covered |
-| **R4** | Đăng nhập thành công với thông tin hợp lệ | TC_AUTH_007<br/>TC_AUTH_010<br/>TC_AUTH_015 | Positive<br/>Negative<br/>Security | Covered |
-| **R5** | Đăng nhập thất bại khi sai mật khẩu | TC_AUTH_008<br/>TC_AUTH_009 | Negative<br/>Negative | Covered |
-| **R6** | Quên mật khẩu gửi email đặt lại | TC_AUTH_011<br/>TC_AUTH_012 | Positive<br/>Negative | Covered |
-| **R7** | Tìm kiếm hiển thị đúng kết quả | TC_PRODUCT_001<br/>TC_PRODUCT_002<br/>TC_PRODUCT_003 | Positive<br/>Negative<br/>Negative | Covered |
-| **R8** | Lọc theo giá hoạt động đúng | TC_PRODUCT_004<br/>TC_PRODUCT_005<br/>TC_PRODUCT_006 | Positive<br/>Positive<br/>Negative | Covered |
-| **R9** | Xem chi tiết sản phẩm | TC_PRODUCT_007<br/>TC_PRODUCT_008 | Positive<br/>Positive | Covered |
-| **R10** | Thêm sản phẩm vào giỏ thành công | TC_CART_001<br/>TC_CART_002<br/>TC_CART_003<br/>TC_CART_004 | Positive<br/>Negative<br/>Boundary<br/>Negative | Covered |
-| **R11** | Cập nhật số lượng trong giỏ | TC_CART_005<br/>TC_CART_006 | Positive<br/>Positive | Covered |
-| **R12** | Xoá sản phẩm khỏi giỏ | TC_CART_007<br/>TC_CART_008 | Positive<br/>Positive | Covered |
-| **R13** | Thanh toán bắt buộc nhập địa chỉ | TC_CHECKOUT_002<br/>TC_CHECKOUT_003<br/>TC_CHECKOUT_004 | Negative<br/>Boundary<br/>Boundary | Covered |
-| **R14** | Chọn phương thức thanh toán | TC_CHECKOUT_005<br/>TC_CHECKOUT_006<br/>TC_CHECKOUT_001 | Positive<br/>Negative<br/>Positive | Covered |
-| **R15** | Đặt hàng thành công | TC_CHECKOUT_001<br/>TC_CHECKOUT_007<br/>TC_CHECKOUT_008<br/>TC_CHECKOUT_009<br/>TC_CHECKOUT_015 | Positive<br/>Positive<br/>Positive<br/>Negative<br/>Positive | Covered |
-| **R16** | Lưu lịch sử đơn hàng | TC_CHECKOUT_010<br/>TC_CHECKOUT_011<br/>TC_CHECKOUT_012<br/>TC_CHECKOUT_013<br/>TC_CHECKOUT_014 | Positive<br/>Positive<br/>Positive<br/>Positive<br/>Negative | Covered |
 
 ---
 
