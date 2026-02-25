@@ -31,18 +31,18 @@ Mục đích kiểm thử:
 
 | Mô-đun                    | Tính năng                          | Mô tả                                                                 |
 | ------------------------- | ---------------------------------- | --------------------------------------------------------------------- |
-| **Xác thực**             | Đăng nhập vào hệ thống [Thực tế]   | Đăng nhập với các tài khoản demo có sẵn, xử lý trường hợp đúng/sai   |
-|                           | Đăng xuất hệ thống [Thực tế]       | Đăng xuất qua menu bên trái, đảm bảo phiên làm việc được kết thúc    |
-|                           | Thông báo lỗi đăng nhập [Thực tế]  | Hiển thị và xử lý thông báo khi nhập sai username/password           |
-| **Sản phẩm & Giỏ hàng**  | Xem danh sách sản phẩm [Thực tế]   | Hiển thị đúng tên, giá, mô tả, hình ảnh trên trang Inventory         |
-|                           | Sắp xếp sản phẩm [Thực tế]         | Kiểm tra các tuỳ chọn sắp xếp (A to Z, Z to A, Low-High, High-Low)   |
-|                           | Xem chi tiết sản phẩm [Thực tế]    | Mở trang chi tiết sản phẩm, thông tin và nút Add to cart              |
-|                           | Quản lý giỏ hàng [Thực tế]         | Thêm/xoá sản phẩm vào/ra giỏ hàng từ nhiều vị trí khác nhau          |
-| **Checkout (Thanh toán)**| Nhập thông tin khách hàng [Thực tế]| Nhập First Name, Last Name, Postal Code và kiểm tra tính hợp lệ      |
-|                           | Xem lại đơn hàng [Thực tế]         | Kiểm tra trang Overview: sản phẩm, số lượng, thuế, tổng tiền         |
-|                           | Hoàn tất đặt hàng [Thực tế]        | Hoàn tất checkout và hiển thị trang xác nhận đơn hàng                 |
-| **Điều hướng & Menu**    | Menu bên trái [Thực tế]            | Kiểm tra các mục All Items, About, Logout, Reset App State            |
-|                           | Biểu tượng giỏ hàng [Thực tế]      | Hiển thị số lượng sản phẩm, điều hướng đúng tới trang giỏ hàng       |
+| **Xác thực**             | Đăng nhập vào hệ thống     | Đăng nhập với các tài khoản demo có sẵn, xử lý trường hợp đúng/sai   |
+|                           | Đăng xuất hệ thống         | Đăng xuất qua menu bên trái, đảm bảo phiên làm việc được kết thúc    |
+|                           | Thông báo lỗi đăng nhập    | Hiển thị và xử lý thông báo khi nhập sai username/password           |
+| **Sản phẩm & Giỏ hàng**  | Xem danh sách sản phẩm     | Hiển thị đúng tên, giá, mô tả, hình ảnh trên trang Inventory         |
+|                           | Sắp xếp sản phẩm           | Kiểm tra các tuỳ chọn sắp xếp (A to Z, Z to A, Low-High, High-Low)   |
+|                           | Xem chi tiết sản phẩm      | Mở trang chi tiết sản phẩm, thông tin và nút Add to cart              |
+|                           | Quản lý giỏ hàng           | Thêm/xoá sản phẩm vào/ra giỏ hàng từ nhiều vị trí khác nhau          |
+| **Checkout (Thanh toán)**| Nhập thông tin khách hàng  | Nhập First Name, Last Name, Postal Code và kiểm tra tính hợp lệ      |
+|                           | Xem lại đơn hàng           | Kiểm tra trang Overview: sản phẩm, số lượng, thuế, tổng tiền         |
+|                           | Hoàn tất đặt hàng          | Hoàn tất checkout và hiển thị trang xác nhận đơn hàng                 |
+| **Điều hướng & Menu**    | Menu bên trái              | Kiểm tra các mục All Items, About, Logout, Reset App State            |
+|                           | Biểu tượng giỏ hàng        | Hiển thị số lượng sản phẩm, điều hướng đúng tới trang giỏ hàng       |
 
 ### 2.2 Ngoài phạm vi
 
@@ -91,9 +91,9 @@ Mục đích kiểm thử:
 
 | Loại dữ liệu | Chi tiết                                                                 |
 | ------------ | ------------------------------------------------------------------------ |
-| Tài khoản    | Danh sách tài khoản demo có sẵn trên `https://www.saucedemo.com/` [Thực tế] |
-| Sản phẩm     | Danh sách sản phẩm hiển thị trên trang Inventory [Thực tế]              |
-| Giá cả       | Giá sản phẩm và tổng tiền đúng như hiển thị trên hệ thống [Thực tế]     |
+| Tài khoản    | Danh sách tài khoản demo có sẵn trên `https://www.saucedemo.com/`   |
+| Sản phẩm     | Danh sách sản phẩm hiển thị trên trang Inventory                |
+| Giá cả       | Giá sản phẩm và tổng tiền đúng như hiển thị trên hệ thống       |
 | Danh mục     | Không phân loại danh mục, sử dụng danh sách sản phẩm mặc định           |
 
 ### 4.3 Công cụ sử dụng
