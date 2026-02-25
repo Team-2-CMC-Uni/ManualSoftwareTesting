@@ -39,7 +39,7 @@
 | **Loại** | Negative |
 | **Priority** | Medium |
 | **Điều kiện trước** | Có sẵn username demo bị khoá  |
-| **Các bước thực hiện** | 1. Nhập username bị khoá **`lock_out_user`**<br/>2. Nhập password chuẩn **`secret_sauce`**<br/>3. Click `Login` |
+| **Các bước thực hiện** | 1. Nhập username bị khoá **`locked_out_user`**<br/>2. Nhập password chuẩn **`secret_sauce`**<br/>3. Click `Login` |
 | **Kết quả mong đợi** | Hiển thị thông báo user bị khoá, không vào được trang Inventory |
 | **Liên quan đến** | R_SWAG_2 |
 
@@ -744,4 +744,5 @@
 ---
 
 **END OF TEST CASES**
+
 
